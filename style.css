@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 body{
   font-family: 'Roboto Condensed', sans-serif;
@@ -135,5 +135,7 @@ Lo que pongamos aquí ocurrirá si el ancho es de mínimo 700 px
   .btn {
     padding: 1rem 3rem;
   }
+
+
 
 }
