@@ -1,0 +1,78 @@
+.<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+		<style>
+	      .map {
+	        height: 400px;
+	        width: 100%;
+	      }
+	    </style>
+	    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+	    <title>OpenLayers example</title>
+    </head>	
+	  <body>
+	    <h2>Volta del general</h2>
+	    <div id="map" class="map"></div>
+	    <script type="text/javascript">
+
+
+			var vista = new ol.View({
+	        	center: ol.proj.fromLonLat([2.5338, 39.6951]),
+	        	zoom: 15
+	        });
+
+			var capa_base = new ol.layer.Tile({
+	       		source: new ol.source.OSM()
+	    	});
+
+				
+		   	var map = new ol.Map({
+		        target: 'map',
+		        layers: [ capa_base ],
+		        view: vista
+		    });
+      		
+		   	// Vamos a crear la segunda capa, en la que pondremos los puntos
+
+		   	var pointFeature 	= new ol.Feature(new ol.geom.Point([2.5338, 39.6951]));
+			var lineFeature 	= new ol.Feature(new ol.geom.LineString([[-1e7, 1e6], [-1e6, 3e6]]));
+    		var polygonFeature 	= new ol.Feature(new ol.geom.Polygon([[[-3e6, -1e6], [-3e6, 1e6],[-1e6, 1e6], [-1e6, -1e6], [-3e6, -1e6]]]));
+
+			alert('hello world');
+
+			var capa_vector_puntos = new ol.layer.VectorLayer({
+				source: new ol.source.VectorSource({
+			    	features: [ pointFeature, lineFeature, polygonFeature]
+			  	}),
+				style: new Style({
+              		image: new ol.style.Icon(/** @type {module:ol/style/Icon~Options} */ ({
+		                anchor: [0.5, 46],
+		                anchorXUnits: 'fraction',
+		                anchorYUnits: 'pixels',
+		                opacity: 0.95,
+		                src: 'img/icon.png'
+              		})),
+	            	stroke: new Stroke({
+	                	width: 3,
+	                	color: [255, 0, 0, 1]
+	              	}),
+	              	fill: new Fill({
+	                color: [0, 0, 255, 0.6]
+	              })
+            })
+
+			})
+
+
+
+			map.addLayer(capa_vector_puntos);
+
+
+
+	    </script>
+	  </body>
+
+
+</html>
+
