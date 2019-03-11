@@ -1,25 +1,45 @@
 
 <html>
 	<head>
-
+        <meta charset="utf-8">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
 		<style>
 	      .map {
-	        height: 400px;
-	        width: 100%;
+	        height: 700px;
+	        width: 1000px;
 	      }
 	    </style>
 	    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
 	    <title>OpenLayers example</title>
     </head>	
 	  <body>
-	    <h2>Volta del general</h2>
+          <h1>Pruebas con OpenLayer</h1>
+          <p>
+            Pruebas con mapas utilizando la API de OpenLayer.
+          </p>
+          <h2>Volta del general</h2>
+          <p>
+            Itinerario de la excursión que parte del parking que hay antes de llegar a
+            Banyalbufar, donde se dejará el coche. Al final de un camino de tierra,
+            se enlaza con la carretera a la altura de la posesión de Son Bunyola.
+              
+            Terminamos la excursión en la platja de Son Bunyola, poco antes de llegar
+            al Port des Canonge.
+          </p>
 	    <div id="map" class="map"></div>
+
+          <h2>Mapa general de Mallorca</h2>
+          <p>
+            Excursiones de mallorca
+          </p>
+          
+          
+        <div id="mapaMallorca" class="map"></div>  
 	    <script type="text/javascript">
 
 			// primero creamos una view, la centramos y le metemos el zoom que queremos
 
-			var vista = new ol.View({
+			var vistaVoltaGeneral = new ol.View({
 	        	center: ol.proj.fromLonLat([2.5338, 39.6951]),
 	        	zoom: 15
 	        });
@@ -30,19 +50,54 @@
 	       		source: new ol.source.OSM()
 	    	});
 
-			// Creamos nuestro mapa y le metemos la capa del mapamundi
+			// Creamos nuestro mapa de excursion y le metemos la capa del mapamundi
+            // Este mapa va a caer en el DIV con class capa_base
 				
-		   	var map = new ol.Map({
+		   	var mapaCorreu = new ol.Map({
 		        target: 'map',
 		        layers: [ capa_base ],
-		        view: vista
+		        view: vistaVoltaGeneral
 		    });
       		
-		   	// Vamos a crear una segunda capa en la que incluiremos los POIs (point of interest)
+		   	
+            // MAPA 2 ---- MAPA GENERAL DE MALLORCA ------- 
+            // Creamos nuestro mapa de Mallorca y le metemos la capa del mapamundi
+            // Este mapa va a caer en el DIV con class capa_base
+            
+            var vistaMallorca = new ol.View({
+	        	center: ol.proj.fromLonLat([2.7892, 39.6157]),
+	        	zoom: 10
+	        });
+				
+		   	var mapaMallorca = new ol.Map({
+		        target: 'mapaMallorca',
+		        layers: [ capa_base ],
+		        view: vistaMallorca
+		    });
+            
+            
+            
+            // Vamos a crear una segunda capa en la que incluiremos los POIs (point of interest)
 		   	// Hay que transformar las coordenadas porque sino no va
 
 		   	var coordinate = ol.proj.transform([2.52145, 39.69000], 'EPSG:4326', 'EPSG:3857');
-			var coordinate2 = ol.proj.transform([2.55049, 39.69944], 'EPSG:4326', 'EPSG:3857');
+			var coordinate2 = ol.proj.transform([2.79782, 39.81050], 'EPSG:4326', 'EPSG:3857');
+            var massanella = ol.proj.transform([2.8529806, 39.8060306], 'EPSG:4326', 'EPSG:3857');
+            
+        /*    var tossals
+            var tomir
+            var alfabia
+            var teix
+            var galatzo
+            var puig roig
+            N39 47 2.96 E2 49 13.41
+ N39 50 35.53 E2 55 32.51
+ N39 44 35.94 E2 43 56.86
+ N39 43 52.68 E2 39 40.91
+ N39 38 2.17 E2 29 12.01
+ N39 51 38.43 E2 51 37.79*/
+
+
 
 		   	// Creamos una característica que contenga un punto en donde queremos
 
@@ -55,16 +110,20 @@
 		   		new ol.geom.Point(coordinate2)
 		   	);
 					
+            var pointFeature3 	= new ol.Feature(		   		
+		   		
+		   		new ol.geom.Point(massanella)
+		   	);
 		 	// Esto es el icono que quería poner como marcador. La cosa es que da problemas
 		 	// Al hacer zoom in y out se va donde le da la gana. Lo he cambiado por un círculo. No se llega a usar
 
 			var icono = new ol.style.Icon ({
-		                anchor: [0.5, 46],
-		                anchorXUnits: 'fraction',
-		                anchorYUnits: 'pixels',
-		                opacity: 0.95,
-		                src: 'img/Ol_icon_blue_example.png'
-              		});
+                anchor: [0.5, 46],
+                anchorXUnits: 'fraction',
+                anchorYUnits: 'pixels',
+                opacity: 0.95,
+                src: 'img/Ol_icon_blue_example.png'
+            });
 
 			// Vamos a hacer un circulito con relleno negro y borde blanco
 			// Creamos las propiedades
@@ -97,20 +156,75 @@
 			// Creamos un layer y la añadimos al mapa
 			
 			var vectorSource = new ol.source.Vector({
-				features: [ pointFeature
-				, pointFeature2 
+				features: [ pointFeature,
+				pointFeature2,
+                pointFeature3
 				]
 			});
 
 
 
-			var vl = new ol.layer.Vector({
+			var capa_verGeo = new ol.layer.Vector({
 				source: vectorSource,
 				style:  circulo_negro
 			});
 
+        
+            
+            var style = {
+                'Point': new ol.style.Style({
+                    image: new ol.style.Circle({
+                        fill: new ol.style.Fill({
+                            color: '#8c2210'
+                        }),
+                        radius: 5,
+                        stroke: new ol.style.Stroke({
+                            color: '#000',
+                            width: 1
+                        })
+                    })
+                }),
+                'LineString': new ol.style.Style({
+                    stroke: new ol.style.Stroke({
+                        color: '#f00',
+                        width: 3
+                    })
+                }),
+                'MultiLineString': new ol.style.Style({
+                    stroke: new ol.style.Stroke({
+                        color: '#f45c42',
+                        width: 3
+                    })
+                })
+            };
+            
+            // Pruebas con mapas KML
+            // Por el motivo que sea los KML de Google Earth no los coge bien
+            //import KMLSource from 'ol/source/KML';
 
-			map.addLayer(vl);
+            var verticesgeodesicos = new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    //projection: 'EPSG:3857',
+                    url: 'kml/hola.kml',
+                    format: new ol.format.KML()
+                }),
+                    style: circulo_negro
+            });
+            
+            
+            var v2 = new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'gpx/B4122_015_Canonge.gpx',
+                    format: new ol.format.GPX()
+                }),
+                style: function(feature) {
+                    return style[feature.getGeometry().getType()];
+                }
+            });
+            
+            
+            mapaCorreu.addLayer(v2);
+            mapaMallorca.addLayer(capa_verGeo);
 
 
 	    </script>
