@@ -264,3 +264,72 @@
         		);
         		mapaMallorca.setCenter();
         		*/
+
+
+
+                var kmlSources = ['gpx/B4122_001_Bruta.gpx',
+                        'gpx/B4122_002_Andritxol.gpx',
+                        'gpx/B4122_003_PortalsVells.gpx',
+                        'gpx/B4122_004_Farineta.gpx',
+                        'gpx/B4122_005_dAndratx-SantElm.gpx',
+                        'gpx/B4122_006_Dragonera.gpx',
+                        'gpx/B4122_007_Trapa.gpx',
+                        'gpx/B4122_008_Fab¡oler.gpx',
+                        'gpx/B4122_009_MiradordesesSinies.gpx',
+                        'gpx/B4122_010_SEsclop.gpx',
+                        'gpx/B4122_011_Galatzo_A.gpx',
+                        'gpx/B4122_012_Galatzo_B_neu-zusammen.gpx',
+                        'gpx/B4122_013_FitadelRam.gpx',
+                        'gpx/B4122_014_Correu.gpx',
+                        'gpx/B4122_015_Canonge.gpx',
+                        'gpx/B4122_016_Valldemossa_A.gpx',
+                        'gpx/B4122_017_Valldemossa_B.gpx',
+                        'gpx/B4122_018_Valldemossa-Dei.gpx',
+                        'gpx/B4122_020_Foradada.gpx',
+                        'gpx/B4122_021_Bunyola.gpx',
+                        'gpx/B4122_022_Soller-Dei.gpx',
+                        'gpx/B4122_02B_deCostello-Soller.gpx',
+                        'gpx/B4122_024_Calobra.gpx',
+                        'gpx/B4122_025_Cuber-Soller.gpx',
+                        'gpx/B4122_026_TossalsVerds.gpx',
+                        'gpx/B4122_027_CanaletadeMassanella.gpx',
+                        'gpx/B4122_028_CastelldAlaro.gpx',
+                        'gpx/B4122_029_Cuber-Lluc.gpx',
+                        'gpx/B4122_030_lluc.gpx',
+                        'gpx/B4122_0B1_TorrentdePare¡s_A.gpx',
+                        'gpx/B4122_032_TorrentdePare¡s_B.gpx',
+                        'gpx/B4122_033_TorredesaMoladeTuent.gpx',
+                        'gpx/B4122_034_PuigRoig.gpx',
+                        'gpx/B4122_035_Tomir.gpx',
+                        'gpx/B4122_036_deLluc.gpx',
+                        'gpx/B4122_037_Massanella_A.gpx',
+                        'gpx/B4122_038_Massanella_B.gpx',
+                        'gpx/B4122_039_Mortitx.gpx',
+                        'gpx/B4122_041_Maria.gpx',
+                        'gpx/B4122_042_Boquer.gpx',
+                        'gpx/B4122_043_CastelldelRei.gpx',
+                        'gpx/B4122_044_Fumat.gpx',
+                        'gpx/B4122_019_SEstaca.gpx'];
+                
+alert(kmlSources.length);
+
+                
+                
+                for (var posicion=0; posicion<kmlSources.length; posicion++) {
+
+            //        alert(kmlSources[posicion]);
+                    var kmlLayer = new ol.layer.Vector({
+                        source: new ol.source.Vector({
+                            url: kmlSources[posicion],
+                            format: new ol.format.GPX()
+                        }),
+                        style: function(feature) {
+                            return style[feature.getGeometry().getType()];
+                        }
+                    });
+              //      alert('adios');
+                    mapaMallorca.addLayer(kmlLayer);
+                    
+                };
+
+                
