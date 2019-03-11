@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>refugio.kml</name>
+	<Style id="listing_J1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ranger_station0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ranger_station1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ranger_station0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ranger_station">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="listing_J">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#listing_J1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#listing_J0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ranger_station1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ranger_station">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ranger_station0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ranger_station</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ranger_station1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ranger_station</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ranger_station1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ranger_station1">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="listing_J0">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ranger_station">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ranger_station0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ranger_station0">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<Folder id="results">
+		<name>refugio</name>
+		<open>1</open>
+		<Placemark id="1.2.1">
+			<name>Refugio de Son Moragues</name>
+			<address>07170 Valldemossa, Islas Baleares</address>
+			<phoneNumber>971 17 76 52</phoneNumber>
+			<snippet>07170 Valldemossa, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Refugio de Son Moragues" src="https://lh4.googleusercontent.com/-PzdDCnRTBiU/WfodI89ZW6I/AAAAAAAAGko/xZjZ2gAAnsU3c1DvIw_wismXEbB7kiBuACLIBGAYYCw/w544-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Refugio de Son Moragues</span>  -  <span class="Qfo35d">Cabaña de montaña</span> </div> <div class="gr0Qde"> <div> 07170 Valldemossa </div><div> Islas Baleares </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv"></div> <br> <div class="gs8uRd"> 971 17 76 52 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.caib.es/sites/espaisnaturalsprotegits/es/informacio_general_i_reserves-22820/&amp;sa=U&amp;ved=0ahUKEwiSuqvEicLfAhUR-YUKHSYhBd4Q61gIDCgHMAA&amp;usg=AOvVaw2xdRIaM_gbeIeLFhLTUm7G" target="_blank"> caib.es </a> </div> <br>  <span class="Nqfqlb">4.2</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>  <span class="xDQDq"></span>     <span class="reviews"> <a href="http://www.google.com/search?q=Refugio+de+Son+Moragues,+07170+Valldemossa,+Islas+Baleares&amp;ludocid=3173698199830277231#lrd=0x1297ee5e7d891d07:0x2c0b3db2a12e2c6f,1" target="_blank"> <span class="review-count">14 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297ee5e7d891d07:0x2c0b3db2a12e2c6f&amp;q=Refugio de Son Moragues, 07170 Valldemossa, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.6540907,39.7272833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.4.1">
+			<name>Refugio Son Pons</name>
+			<address>Camino Sa Mata Grossa 2, 07310 Campanet</address>
+			<phoneNumber>971 51 68 37</phoneNumber>
+			<snippet>Camino Sa Mata Grossa 2, 07310 Campanet</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Refugio Son Pons" src="https://lh5.googleusercontent.com/-GsoODGGSJqQ/Wfb-ItwyEdI/AAAAAAAADYI/s0xw5QJlTFYdjSlPbFBhvKK4lBLEphioACLIBGAYYCw/w408-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Refugio Son Pons</span>  -  <span class="Qfo35d">Hotel</span> </div> <div class="gr0Qde"> <div> Camino Sa Mata Grossa 2 </div><div> 07310 Campanet </div><div> Islas Baleares </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv"></div> <br> <div class="gs8uRd"> 971 51 68 37 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.refugio-son-pons.com/&amp;sa=U&amp;ved=0ahUKEwit7q3EicLfAhVIYxoKHUsTBUoQ61gIDSgIMAA&amp;usg=AOvVaw2C9ayiEigYZLGZhnH2BADJ" target="_blank"> refugio-son-pons.com </a> </div> <br>  <span class="Nqfqlb">4.7</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>   <span class="hSSRhf"></span>    <span class="reviews"> <a href="http://www.google.com/search?q=Refugio+Son+Pons,+Camino+Sa+Mata+Grossa+2,+07310+Campanet,+Islas+Baleares&amp;ludocid=12082328807281645821#lrd=0x1297ce28877f2fb7:0xa7ad0e09097dd8fd,1" target="_blank"> <span class="review-count">6 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#listing_C</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297ce28877f2fb7:0xa7ad0e09097dd8fd&amp;q=Refugio Son Pons, Camino Sa Mata Grossa 2, 07310 Campanet&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.9861164,39.7762702,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.3.1">
+			<name>Refugi de Cúber</name>
+			<address>07315 Escorca, Islas Baleares</address>
+			<phoneNumber>971 17 76 52</phoneNumber>
+			<snippet>07315 Escorca, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297c2ac7f87d3c7:0xa85c2f2af90169db&q=Refugi de Cúber, 07315 Escorca, Islas Baleares&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_B</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297c2ac7f87d3c7:0xa85c2f2af90169db&amp;q=Refugi de Cúber, 07315 Escorca, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.7829693,39.7808015,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.4.1">
+			<name>Refugi De Muleta</name>
+			<address>Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands</address>
+			<phoneNumber>971 63 42 71</phoneNumber>
+			<snippet>Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297e5ed83b52e17:0x60f0530e5fe192fd&q=Refugi De Muleta, Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_C</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297e5ed83b52e17:0x60f0530e5fe192fd&amp;q=Refugi De Muleta, Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.6811502,39.7965873,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.5.1">
+			<name>Refugi Can Boi</name>
+			<address>Carrer Es Clot, 5, 07179 Deià, Illes Balears</address>
+			<phoneNumber>971 63 61 86</phoneNumber>
+			<snippet>Carrer Es Clot, 5, 07179 Deià, Illes Balears</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297efb314ccea93:0x282b9b535dffd9b6&q=Refugi Can Boi, Carrer Es Clot, 5, 07179 Deyá, Islas Baleares&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_D</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297efb314ccea93:0x282b9b535dffd9b6&amp;q=Refugi Can Boi, Carrer Es Clot, 5, 07179 Deyá, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.6456129,39.7463533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.6.1">
+			<name>Refugi Tossals Verds</name>
+			<address>07315 Escorca, Islas Baleares</address>
+			<phoneNumber>971 18 20 27</phoneNumber>
+			<snippet>07315 Escorca, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297c32714bfbb85:0xae4fdc50667b2f6d&q=Refugi Tossals Verds, 07315 Escorca, Islas Baleares&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_E</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297c32714bfbb85:0xae4fdc50667b2f6d&amp;q=Refugi Tossals Verds, 07315 Escorca, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.8191462,39.7687209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.8.1">
+			<name>Refugi del Pont Romà</name>
+			<address>Camí Can Guilló, s/n, 07460 Pollença, Balearic Islands</address>
+			<phoneNumber>971 53 44 44</phoneNumber>
+			<snippet>Camí Can Guilló, s/n, 07460 Pollença, Balearic Islands</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297d69f3cc5a151:0xef4ceffc714153b8&q=Refugi del Pont Romà, Camí Can Guilló, s/n, 07460 Pollença, Balearic Islands&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_G</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297d69f3cc5a151:0xef4ceffc714153b8&amp;q=Refugi del Pont Romà, Camí Can Guilló, s/n, 07460 Pollença, Balearic Islands&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>3.013622900000001,39.8824718,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.9.1">
+			<name>Refugi de Lavanor</name>
+			<address>07315 Escorca, Islas Baleares</address>
+			<snippet>07315 Escorca, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1297d9981a536353:0xed8a9ce484d50dd&q=Refugi de Lavanor, 07315 Escorca, Islas Baleares&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1297d9981a536353:0xed8a9ce484d50dd&amp;q=Refugi de Lavanor, 07315 Escorca, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.9071542,39.8824744,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.10.1">
+			<name>Refugi de Son Real</name>
+			<address>07450 Santa Margalida, Islas Baleares</address>
+			<phoneNumber>971 17 76 52</phoneNumber>
+			<snippet>07450 Santa Margalida, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x1296318d5c1c8793:0x8a0cc0e9ae19ad74&q=Refugi de Son Real, 07450 Santa Margalida, Islas Baleares&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			<styleUrl>#listing_I</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x1296318d5c1c8793:0x8a0cc0e9ae19ad74&amp;q=Refugi de Son Real, 07450 Santa Margalida, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>3.187676900000001,39.7515171,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.11.1">
+			<name>Refugi del coll baix</name>
+			<address>Collet del Coll Baix, 07400 Alcúdia, Balearic Islands</address>
+			<phoneNumber>971 17 76 52</phoneNumber>
+			<snippet>Collet del Coll Baix, 07400 Alcúdia, Balearic Islands</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="https://www.google.com/earth/rpc/entity?lat=39.84400000000001&lng=2.98885&fid=0x12962eaad89ec701:0x897f8f2bda9bc148&q=Refugi del coll baix, Collet del Coll Baix, 07400 Alcúdia, Balearic Islands&hl=es&gl=es&client=earth-client&cv=7.3.2.5495&useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)";</script></body></html>]]></description>
+			
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.84400000000001&amp;lng=2.98885&amp;fid=0x12962eaad89ec701:0x897f8f2bda9bc148&amp;q=Refugi del coll baix, Collet del Coll Baix, 07400 Alcúdia, Balearic Islands&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>3.182818,39.8583075,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.5.1">
+			<name>Refugi De Muleta</name>
+			<address>Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands</address>
+			<phoneNumber>971 63 42 71</phoneNumber>
+			<snippet>Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Refugi De Muleta" src="https://lh4.googleusercontent.com/-vPCJEm4naAM/WfX10am4bPI/AAAAAAAAA7g/32U5KJEV8LcCq5K4_L20dCDsqVRB2lKWgCLIBGAYYCw/w544-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Refugi De Muleta</span>  -  <span class="Qfo35d">Albergue</span> </div> <div class="gr0Qde"> <div> Camí del Far, s/n </div><div> 07100 Port de Sóller </div><div> Islas Baleares </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv">Albergue de piedra con vistas panorámicas al mar y a las montañas, y desayuno y aparcamiento gratuitos.</div> <br> <div class="gs8uRd"> 971 63 42 71 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.conselldemallorca.net/%3F&amp;sa=U&amp;ved=0ahUKEwjP6q3EicLfAhUPLBoKHel4A5sQ61gIDSgIMAA&amp;usg=AOvVaw1PThwGe76VqurxuNWLCTSp" target="_blank"> conselldemallorca.net </a> </div> <br>  <span class="Nqfqlb">4.3</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>   <span class="hSSRhf"></span>    <span class="reviews"> <a href="http://www.google.com/search?q=Refugi+De+Muleta,+Cam%C3%AD+del+Far,+s/n,+07100+Port+de+S%C3%B3ller,+Islas+Baleares&amp;ludocid=6985174343254905597#lrd=0x1297e5ed83b52e17:0x60f0530e5fe192fd,1" target="_blank"> <span class="review-count">190 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#listing_D</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297e5ed83b52e17:0x60f0530e5fe192fd&amp;q=Refugi De Muleta, Camí del Far, s/n, 07100 Port de Sóller, Balearic Islands&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.6811502,39.7965873,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.6.1">
+			<name>Refugi Son Amer</name>
+			<address>07315 Escorca, Islas Baleares</address>
+			<phoneNumber>971 51 71 09</phoneNumber>
+			<snippet>07315 Escorca, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Refugi Son Amer" src="https://lh3.googleusercontent.com/-fAcWLpwcU4w/WRF9RtG3qpI/AAAAAAAAAuo/1mtMtXC1W1w-U95mRiCKPnf2WZgQ8WjlwCLIB/w544-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Refugi Son Amer</span>  -  <span class="Qfo35d">Albergue</span> </div> <div class="gr0Qde"> <div> 07315 Escorca </div><div> Islas Baleares </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv">Refugio informal con habitaciones compartidas básicas, salón comedor, sala de estar y zona de reuniones.</div> <br> <div class="gs8uRd"> 971 51 71 09 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.conselldemallorca.net/%3Fid_section%3D4025&amp;sa=U&amp;ved=0ahUKEwic7LjEicLfAhW2gM4BHW9pBrwQ61gIDCgHMAA&amp;usg=AOvVaw3ceY58Zgp_20XNvqlImgQd" target="_blank"> conselldemallorca.net </a> </div> <br>  <span class="Nqfqlb">4.3</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>   <span class="hSSRhf"></span>    <span class="reviews"> <a href="http://www.google.com/search?q=Refugi+Son+Amer,+07315+Escorca,+Islas+Baleares&amp;ludocid=2197297478739830602#lrd=0x1297db06c12828f5:0x1e7e5e6a4626274a,1" target="_blank"> <span class="review-count">137 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#msn_ranger_station</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297db06c12828f5:0x1e7e5e6a4626274a&amp;q=Refugi Son Amer, 07315 Escorca, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.8916671,39.8183062,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.7.1">
+			<name>Hosteria del Puig d&apos;Alaró</name>
+			<address>07340 Alaró, Islas Baleares</address>
+			<phoneNumber>971 94 05 03</phoneNumber>
+			<snippet>07340 Alaró, Islas Baleares</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Hosteria del Puig d'Alaró" src="https://lh5.googleusercontent.com/-NHe02Ooj6H4/WT1ON9nmDGI/AAAAAAAALzg/Z8Io4s6fX3g9D8AUJooSz5yltZyeqVJxwCLIB/w544-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Hosteria del Puig d'Alaró</span>  -  <span class="Qfo35d">Cabaña de montaña</span> </div> <div class="gr0Qde"> <div> 07340 Alaró </div><div> Illes Balears </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv"></div> <br> <div class="gs8uRd"> 971 94 05 03 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.castellalaro.cat/&amp;sa=U&amp;ved=0ahUKEwjgnrnEicLfAhVDgRoKHRILCP4Q61gIDCgHMAA&amp;usg=AOvVaw2BbK87xuixDbLOr0asOtnH" target="_blank"> castellalaro.cat </a> </div> <br>  <span class="Nqfqlb">4.9</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>   <span class="reviews"> <a href="http://www.google.com/search?q=Hosteria+del+Puig+d'Alar%C3%B3,+07340+Alar%C3%B3,+Illes+Balears&amp;ludocid=4416357904002832230#lrd=0x1297c2660a718831:0x3d4a0e1d6513d766,1" target="_blank"> <span class="review-count">10 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#listing_F</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297c2660a718831:0x3d4a0e1d6513d766&amp;q=Hosteria del Puig d&apos;Alaró, 07340 Alaró, Illes Balears&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.7929524,39.732842,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.8.1">
+			<name>Cases de Binifaldo</name>
+			<address>10, Ma-10, 19, 07315 Escorca, Illes Balears</address>
+			<phoneNumber>971 17 76 52</phoneNumber>
+			<snippet>10, Ma-10, 19, 07315 Escorca, Illes Balears</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Cases de Binifaldo" src="https://lh3.googleusercontent.com/-E5LBR0woE6s/W_8AO_6wLaI/AAAAAAAAcD0/OiBKOZCCZGAWPbhbte0ayC6rSSRRc3IUACLIBGAYYCw/w408-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Cases de Binifaldo</span>  -  <span class="Qfo35d">Alojamiento</span> </div> <div class="gr0Qde"> <div> 10 </div><div> Ma-10, 19 </div><div> 07315 Escorca </div><div> Illes Balears </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv"></div> <br> <div class="gs8uRd"> 971 17 76 52 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=https://www.caib.es/sites/espaisnaturalsprotegits/es/casas_de_binifaldo-35323/&amp;sa=U&amp;ved=0ahUKEwiL5rzEicLfAhVG3RoKHaC7B0IQ61gIDigJMAA&amp;usg=AOvVaw2tvVyMzB8AdhDfAuMbiWK3" target="_blank"> caib.es </a> </div> <br>  <span class="Nqfqlb">4.3</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>   <span class="hSSRhf"></span>    <span class="reviews"> <a href="http://www.google.com/search?q=Cases+de+Binifaldo,+10,+Ma-10,+19,+07315+Escorca,+Illes+Balears&amp;ludocid=14673663472259004766#lrd=0x1297dbad2903bd79:0xcba3532f019f795e,1" target="_blank"> <span class="review-count">22 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#msn_ranger_station0</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297dbad2903bd79:0xcba3532f019f795e&amp;q=Cases de Binifaldo, 10, Ma-10, 19, 07315 Escorca, Illes Balears&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.909745,39.8389045,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="1.11.1">
+			<name>Refugi Can Boi</name>
+			<address>Carrer Es Clot, 5, 07179 Deià, Illes Balears</address>
+			<phoneNumber>971 63 61 86</phoneNumber>
+			<snippet>Carrer Es Clot, 5, 07179 Deià, Illes Balears</snippet>
+			<description><![CDATA[<!DOCTYPE html><html lang="es"> <head> <style>body{font-family:Roboto,Arial,sans-serif}.DiVP2e{background-color:#fafafa;border-radius:2px;bottom:2px;left:2px;position:absolute;right:2px;top:2px}.X6ZKdd{font-size:18px;font-weight:bold;line-height:25px;margin-bottom:5px}.gr0Qde{font-size:14px;font-weight:300;line-height:18px;margin-bottom:5px}.Nqfqlb{font-size:16px;line-height:normal;color:#e7711b;margin-right:5px}.review-count{font-size:12px;line-height:normal}.OTInGb,.hSSRhf,.xDQDq{display:inline-block;background-image:url('//maps.gstatic.com/tactile/omnibox/star-20130618.png');width:13px;height:13px;background-size:36px 12px}.hSSRhf{background-position:-13px 0}.xDQDq{background-position:-25px 0}.Qfo35d{font-size:12px;margin-bottom:2px}.gs8uRd{font-size:14px;margin-bottom:2px}.JByhjc{font-size:14px;margin-bottom:2px;margin-top:5px}.iWlmL{font-size:14px;margin-bottom:2px;margin-top:5px}.OYCkv{font-size:14px;margin-bottom:2px;margin-top:5px}.VUd1Hd{font-size:14px;margin-bottom:2px}.jK1Lre{font-size:14px;padding:6px 15px 2px;margin-bottom:5px}.PQWkDb{overflow:hidden;display:inline-block;vertical-align:top;position:relative}.giiMnc{font-size:10px;font-style:italic}.ncIaof{font-weight:600}</style> <meta content="width=device-width, initial-scale=1" name="viewport"> </head> <body> <div class="DiVP2e"> <div class="tg0Ii"> <div class="PQWkDb"> <img alt="Refugi Can Boi" src="https://lh5.googleusercontent.com/-BQQAj4htXU4/WsSCf-4tVnI/AAAAAAAA9Ec/Mx7bcPQT4ccyLbeiNVGu-_QRljxZD8KJQCLIBGAYYCw/w408-h306-k-no/" width="100%"> </div> </div> <br> <div> <span class="X6ZKdd">Refugi Can Boi</span>  -  <span class="Qfo35d">Cabaña de montaña</span> </div> <div class="gr0Qde"> <div> Carrer Es Clot, 5 </div><div> 07179 Deyá </div><div> Islas Baleares </div> </div> <div class="JByhjc">   </div>  <div class="OYCkv"></div> <br> <div class="gs8uRd"> 971 63 61 86 </div> <div class="VUd1Hd"></div> <div class="kZ1n7c"> <a href="/url?q=http://www.refugicanboi.com/&amp;sa=U&amp;ved=0ahUKEwjPo8fEicLfAhUL1BoKHUyuCmMQ61gIDSgIMAA&amp;usg=AOvVaw1me5BKpXuQoYv7SS5pbGEs" target="_blank"> refugicanboi.com </a> </div> <br>  <span class="Nqfqlb">3.8</span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>    <span class="OTInGb"></span>  <span class="xDQDq"></span>     <span class="reviews"> <a href="http://www.google.com/search?q=Refugi+Can+Boi,+Carrer+Es+Clot,+5,+07179+Dey%C3%A1,+Islas+Baleares&amp;ludocid=2894577967877314998#lrd=0x1297efb314ccea93:0x282b9b535dffd9b6,1" target="_blank"> <span class="review-count">127 reseñas</span></a> </span> <div class="Hb2bEc">  </div> </div> </body> </html>]]></description>
+			<styleUrl>#listing_J</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>https://www.google.com/earth/rpc/entity?lat=39.7767&amp;lng=2.82791&amp;fid=0x1297efb314ccea93:0x282b9b535dffd9b6&amp;q=Refugi Can Boi, Carrer Es Clot, 5, 07179 Deyá, Islas Baleares&amp;hl=es&amp;gl=es&amp;client=earth-client&amp;cv=7.3.2.5495&amp;useragent=GoogleEarth/7.3.2.5495(Windows;Microsoft Windows (6.2.9200.0);es;kml:2.2;client:Pro;type:default)</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.6456129,39.7463533,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

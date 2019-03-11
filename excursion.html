@@ -34,9 +34,20 @@
           </p>
           
           
-        <div id="mapaMallorca" class="map"></div>  
+        <div id="mapaMallorca" class="map"></div> 
+
+
+        <button id="pal-to-cami_des_correu">Cami des correu</button> 
+        <button id="pal-to-volta_des_general">Volta des general</button> 
+		<button id="centro_mallorca">Volta des general</button> 
+        
 	    <script type="text/javascript">
 
+
+	    	var center_cami_des_correu = ol.proj.fromLonLat([2.5307, 39.6844]);
+			var center_volta_des_general = ol.proj.fromLonLat([2.5338, 39.6951]);
+
+			var centro_mallorca = ol.proj.fromLonLat([2.5, 39.6]);
 			// primero creamos una view, la centramos y le metemos el zoom que queremos
 
 			var vistaVoltaGeneral = new ol.View({
@@ -56,7 +67,8 @@
 		   	var mapaCorreu = new ol.Map({
 		        target: 'map',
 		        layers: [ capa_base ],
-		        view: vistaVoltaGeneral
+		        view: vistaVoltaGeneral,
+		        loadTilesWhileAnimating: true
 		    });
       		
 		   	
@@ -117,13 +129,19 @@
 		 	// Esto es el icono que quería poner como marcador. La cosa es que da problemas
 		 	// Al hacer zoom in y out se va donde le da la gana. Lo he cambiado por un círculo. No se llega a usar
 
-			var icono = new ol.style.Icon ({
-                anchor: [0.5, 46],
-                anchorXUnits: 'fraction',
-                anchorYUnits: 'pixels',
+			var imagen_refugio = new ol.style.Icon ({
+          anchor: [0.5, 0.5],
+          anchorXUnits: 'fraction',
+          anchorYUnits: 'fraction',
                 opacity: 0.95,
-                src: 'img/Ol_icon_blue_example.png'
+                src: 'img/home.png'
             });
+
+            var icono_refugio = new ol.style.Style({
+              		image: imagen_refugio,
+	            	stroke: trazo,
+	              	fill: relleno
+            	});
 
 			// Vamos a hacer un circulito con relleno negro y borde blanco
 			// Creamos las propiedades
@@ -202,17 +220,36 @@
             // Por el motivo que sea los KML de Google Earth no los coge bien
             //import KMLSource from 'ol/source/KML';
 
-            var verticesgeodesicos = new ol.layer.Vector({
+            var refugios = new ol.layer.Vector({
                 source: new ol.source.Vector({
                     //projection: 'EPSG:3857',
-                    url: 'kml/hola.kml',
-                    format: new ol.format.KML()
+                    url: 'kml/refugios.kml',
+                    format: new ol.format.KML({
+      					extractStyles: false,
+      					//showPointNames: true
+    				})
                 }),
-                    style: circulo_negro
+                    style: icono_refugio
             });
             
+
+            var exc_cami_des_correu = new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    //projection: 'EPSG:3857',
+                    url: 'kml/exc_cami_des_correu.kml',
+                    format: new ol.format.KML({
+      					extractStyles: false,
+      					//showPointNames: true
+    				})
+                }),
+                style: function(feature) {
+                    return style[feature.getGeometry().getType()];
+                }
+            });
+
+
             
-            var v2 = new ol.layer.Vector({
+            var exc_port_des_canonge = new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'gpx/B4122_015_Canonge.gpx',
                     format: new ol.format.GPX()
@@ -223,9 +260,70 @@
             });
             
             
-            mapaCorreu.addLayer(v2);
-            mapaMallorca.addLayer(capa_verGeo);
+            mapaCorreu.addLayer(exc_port_des_canonge);
+            //mapaMallorca.addLayer(capa_verGeo);
+            mapaMallorca.addLayer(refugios);
+            mapaMallorca.addLayer(exc_cami_des_correu);
+            mapaMallorca.addLayer(exc_port_des_canonge);
+            
+            // Festival de animaciones
 
+
+            
+
+            function onClick(id, callback) {
+        		document.getElementById(id).addEventListener('click', callback);
+      		}
+
+			onClick('pal-to-cami_des_correu', function() {
+        		
+				// Teóricamente esto debería de funcionar y centrar
+				// según la zona que ocupe la ruta. La cosa es que no va
+				// TO-DO: Arreglar para que funcione
+				
+				/*
+
+				var vs = new ol.source.Vector({
+                    //projection: 'EPSG:3857',
+                    url: 'kml/exc_cami_des_correu.kml',
+                    format: new ol.format.KML({
+      					extractStyles: false,
+      					//showPointNames: true
+    				})
+                })
+
+//				alert(vs.getExtent());
+
+        		mapaMallorca.getView().fit(
+        			vs.getExtent(), 
+        			{ duration: 1000 }
+        		);
+        		mapaMallorca.setCenter();
+        		*/
+
+			vistaMallorca.animate({
+	        		center: center_cami_des_correu,
+	        		duration: 2000,
+	        		zoom: 14
+	        	});
+			});
+
+			onClick('pal-to-volta_des_general', function() {
+					vistaMallorca.animate({
+	        		center: center_volta_des_general,
+	        		duration: 2000,
+	        		zoom: 15
+	        	});
+			});
+/*
+			onClick(centrar_en_ruta, function() {
+					vistaMallorca.animate({
+	        		center: centrar_en_ruta,
+	        		duration: 2000,
+	        		zoom: 15
+	        	});
+			});
+*/
 
 	    </script>
 	  </body>
