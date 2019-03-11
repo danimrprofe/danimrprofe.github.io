@@ -267,16 +267,26 @@
             mapaMallorca.addLayer(exc_port_des_canonge);
             
             // Festival de animaciones
-
-
+            // En función del botón que pulsemos, nos llamará a una función
+            // que recentrará el mapa según la ruta que se quiera visuali
             
 
             function onClick(id, callback) {
         		document.getElementById(id).addEventListener('click', callback);
       		}
 
-			onClick('pal-to-cami_des_correu', function() {
-        		
+			onClick('pal-to-cami_des_correu', 	function() { recentrar(center_cami_des_correu, 2000, 14); });
+ 			onClick('pal-to-volta_des_general', function() { recentrar(center_volta_des_general, 2000, 15); });
+
+			function recentrar(centro_mapa, duracion, zoom){
+					vistaMallorca.animate({
+		        		center: centro_mapa,
+		        		duration: duracion,
+		        		zoom: zoom
+	        		});
+			}
+
+
 				// Teóricamente esto debería de funcionar y centrar
 				// según la zona que ocupe la ruta. La cosa es que no va
 				// TO-DO: Arreglar para que funcione
@@ -301,29 +311,6 @@
         		mapaMallorca.setCenter();
         		*/
 
-			vistaMallorca.animate({
-	        		center: center_cami_des_correu,
-	        		duration: 2000,
-	        		zoom: 14
-	        	});
-			});
-
-			onClick('pal-to-volta_des_general', function() {
-					vistaMallorca.animate({
-	        		center: center_volta_des_general,
-	        		duration: 2000,
-	        		zoom: 15
-	        	});
-			});
-/*
-			onClick(centrar_en_ruta, function() {
-					vistaMallorca.animate({
-	        		center: centrar_en_ruta,
-	        		duration: 2000,
-	        		zoom: 15
-	        	});
-			});
-*/
 
 	    </script>
 	  </body>
