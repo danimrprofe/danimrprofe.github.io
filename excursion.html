@@ -16,7 +16,7 @@
 	    <div id="map" class="map"></div>
 	    <script type="text/javascript">
 
-import VectorSource from 'ol/source/Vector.js';
+		//import ol.source.Vector.VectorSource ;
 			var vista = new ol.View({
 	        	center: ol.proj.fromLonLat([2.5338, 39.6951]),
 	        	zoom: 15
@@ -35,9 +35,18 @@ import VectorSource from 'ol/source/Vector.js';
       		
 		   	// Vamos a crear la segunda capa, en la que pondremos los puntos
 
-		   	var pointFeature 	= new ol.Feature(new ol.geom.Point([2.5338, 39.6951]));
-			var lineFeature 	= new ol.Feature(new ol.geom.LineString([[-1e7, 1e6], [-1e6, 3e6]]));
-    		var polygonFeature 	= new ol.Feature(new ol.geom.Polygon([[[-3e6, -1e6], [-3e6, 1e6],[-1e6, 1e6], [-1e6, -1e6], [-3e6, -1e6]]]));
+		   	var coordinate = ol.proj.transform([2.5338, 39.6951], 'EPSG:4326', 'EPSG:3857');
+			//var geometry = new ol.geom.Point();
+			//geometry.setCoordinates(coordinate);
+			//feature.setGeometry(geometry);
+
+		   	var pointFeature 	= new ol.Feature(
+		   		//new ol.geom.Point([39.6951, 2.5338])
+		   		new ol.geom.Point(coordinate)
+		   	);
+
+
+
 
 					
 			var icono = new ol.style.Icon ({
@@ -45,7 +54,7 @@ import VectorSource from 'ol/source/Vector.js';
 		                anchorXUnits: 'fraction',
 		                anchorYUnits: 'pixels',
 		                opacity: 0.95,
-		                src: 'img/icon.png'
+		                src: 'img/Ol_icon_blue_example.png'
               		});
 
 			var relleno = new ol.style.Fill({
@@ -53,9 +62,9 @@ import VectorSource from 'ol/source/Vector.js';
 	                });
 
 			var trazo = new ol.style.Stroke({
-	                	width: 3,
-	                	color: [255, 0, 0, 1]
-	              	});
+				width: 3,
+				color: [255, 0, 0, 1]
+			});
 
 			var estilo = new ol.style.Style({
               		image: icono,
@@ -63,17 +72,28 @@ import VectorSource from 'ol/source/Vector.js';
 	              	fill: relleno
             	});
 
-alert('hello world');
-	
+			
+			var vectorSource = new ol.source.Vector({
+				features: [ pointFeature ]
+			});
+
+
+
+			var vl = new ol.layer.Vector({
+				source: vectorSource,
+				style:  estilo
+			});
+
+/*	
 			var capa_vector_puntos = new ol.layer.vector.VectorLayer({
 				source: new ol.source.vector.VectorSource({
-					features: [ pointFeature, lineFeature, polygonFeature]
+					features: [ pointFeature ]
 					}),
 				style: estilo
 			});
-			
+*/			
 
-			map.addLayer(capa_vector_puntos);
+			map.addLayer(vl);
 
 
 
