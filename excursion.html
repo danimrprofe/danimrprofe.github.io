@@ -1,6 +1,7 @@
-.<!DOCTYPE HTML>
+
 <html>
 	<head>
+
 		<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
 		<style>
 	      .map {
@@ -16,16 +17,20 @@
 	    <div id="map" class="map"></div>
 	    <script type="text/javascript">
 
-		//import ol.source.Vector.VectorSource ;
+			// primero creamos una view, la centramos y le metemos el zoom que queremos
+
 			var vista = new ol.View({
 	        	center: ol.proj.fromLonLat([2.5338, 39.6951]),
 	        	zoom: 15
 	        });
 
+			// Nuestra capa base será un mapa OSM del mapamundi
+
 			var capa_base = new ol.layer.Tile({
 	       		source: new ol.source.OSM()
 	    	});
 
+			// Creamos nuestro mapa y le metemos la capa del mapamundi
 				
 		   	var map = new ol.Map({
 		        target: 'map',
@@ -33,22 +38,26 @@
 		        view: vista
 		    });
       		
-		   	// Vamos a crear la segunda capa, en la que pondremos los puntos
+		   	// Vamos a crear una segunda capa en la que incluiremos los POIs (point of interest)
+		   	// Hay que transformar las coordenadas porque sino no va
 
-		   	var coordinate = ol.proj.transform([2.5338, 39.6951], 'EPSG:4326', 'EPSG:3857');
-			//var geometry = new ol.geom.Point();
-			//geometry.setCoordinates(coordinate);
-			//feature.setGeometry(geometry);
+		   	var coordinate = ol.proj.transform([2.52145, 39.69000], 'EPSG:4326', 'EPSG:3857');
+			var coordinate2 = ol.proj.transform([2.55049, 39.69944], 'EPSG:4326', 'EPSG:3857');
 
-		   	var pointFeature 	= new ol.Feature(
-		   		//new ol.geom.Point([39.6951, 2.5338])
+		   	// Creamos una característica que contenga un punto en donde queremos
+
+		   	var pointFeature 	= new ol.Feature(		   		
 		   		new ol.geom.Point(coordinate)
 		   	);
 
-
-
-
+			var pointFeature2 	= new ol.Feature(		   		
+		   		
+		   		new ol.geom.Point(coordinate2)
+		   	);
 					
+		 	// Esto es el icono que quería poner como marcador. La cosa es que da problemas
+		 	// Al hacer zoom in y out se va donde le da la gana. Lo he cambiado por un círculo. No se llega a usar
+
 			var icono = new ol.style.Icon ({
 		                anchor: [0.5, 46],
 		                anchorXUnits: 'fraction',
@@ -56,6 +65,9 @@
 		                opacity: 0.95,
 		                src: 'img/Ol_icon_blue_example.png'
               		});
+
+			// Vamos a hacer un circulito con relleno negro y borde blanco
+			// Creamos las propiedades
 
 			var relleno = new ol.style.Fill({
 	                color: 'rgba(255, 255, 255, 0.6)'
@@ -66,35 +78,39 @@
 				color: [255, 0, 0, 1]
 			});
 
-			var estilo = new ol.style.Style({
-              		image: icono,
+			// Creamos el círculo
+
+			var circulo = new ol.style.Circle({
+	            radius: 7,
+	            fill: new ol.style.Fill({ color: 'black'}),
+	            stroke: new ol.style.Stroke({ color: 'white', width: 2  })
+            });
+
+            // Creamos un estilo
+
+			var circulo_negro = new ol.style.Style({
+              		image: circulo,
 	            	stroke: trazo,
 	              	fill: relleno
             	});
 
+			// Creamos un layer y la añadimos al mapa
 			
 			var vectorSource = new ol.source.Vector({
-				features: [ pointFeature ]
+				features: [ pointFeature
+				, pointFeature2 
+				]
 			});
 
 
 
 			var vl = new ol.layer.Vector({
 				source: vectorSource,
-				style:  estilo
+				style:  circulo_negro
 			});
 
-/*	
-			var capa_vector_puntos = new ol.layer.vector.VectorLayer({
-				source: new ol.source.vector.VectorSource({
-					features: [ pointFeature ]
-					}),
-				style: estilo
-			});
-*/			
 
 			map.addLayer(vl);
-
 
 
 	    </script>
