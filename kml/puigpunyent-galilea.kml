@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>puigpunyent-galilea.kml</name>
+	<Style id="line-1267FF-5000-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>7.5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-FF0014-4000-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-FF0014-4000-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-FF0014-4000-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="icon-22-highlight">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+			</Icon>
+			<hotSpot x="16" y="32" xunits="pixels" yunits="insetPixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="icon-ci-2-nodesc-highlight">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>icon-2.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="icon-22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#icon-22-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#icon-22-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-FF0014-4000-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1400ff</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="icon-22-nodesc-highlight">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+			</Icon>
+			<hotSpot x="16" y="32" xunits="pixels" yunits="insetPixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="icon-22-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#icon-22-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#icon-22-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="icon-ci-2-nodesc-normal">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>icon-2.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="icon-22-nodesc-normal">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+			</Icon>
+			<hotSpot x="16" y="32" xunits="pixels" yunits="insetPixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="icon-ci-1-nodesc-highlight">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>icon-1.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="line-FF0014-4000-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff1400ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="icon-ci-1-nodesc-normal">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>icon-1.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="line-1267FF-5000-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff6712</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="icon-ci-1-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#icon-ci-1-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#icon-ci-1-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="icon-ci-2-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#icon-ci-2-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#icon-ci-2-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="line-1267FF-5000-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="icon-22-normal">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+			</Icon>
+			<hotSpot x="16" y="32" xunits="pixels" yunits="insetPixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+	</Style>
+	<Folder>
+		<name>Puigpunyent a galilea</name>
+		<open>1</open>
+		<Placemark>
+			<name>Galilea Puigpunyent  (inicio)</name>
+			<styleUrl>#icon-22-nodesc</styleUrl>
+			<Point>
+				<coordinates>2.504162,39.615639,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Galilea Puigpunyent  (parte 1)</name>
+			<styleUrl>#line-FF0014-4000-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					2.504162,39.615639,0 2.504221,39.616028,0 2.504197,39.616318,0 2.504274,39.6166,0 2.504268,39.616695,0 2.504236,39.616745,0 2.504489,39.61697,0 2.50479,39.617126,0 2.504545,39.617329,0 2.504312,39.617752,0 2.504115,39.617867,0 2.504028,39.617958,0 2.504056,39.618217,0 2.503984,39.618305,0 2.503769,39.61824,0 2.503632,39.618279,0 2.503596,39.618359,0 2.503551,39.618752,0 2.503453,39.61911,0 2.503444,39.6194,0 2.503485,39.619495,0 2.503559,39.619568,0 2.50383,39.619743,0 2.504233,39.620129,0 2.504744,39.620426,0 2.504627,39.620445,0 2.504507,39.620422,0 2.504408,39.620476,0 2.504369,39.620567,0 2.504338,39.620842,0 2.504181,39.620998,0 2.504185,39.621098,0 2.504265,39.621185,0 2.504824,39.621395,0 2.505145,39.621735,0 2.505198,39.621822,0 2.505219,39.622013,0 2.505297,39.622066,0 2.505366,39.621979,0 2.505351,39.621506,0 2.50542,39.621407,0 2.505521,39.621361,0 2.50576,39.621368,0 2.505878,39.621403,0 2.505969,39.621452,0 2.506051,39.621552,0 2.506373,39.621677,0 2.506601,39.621613,0 2.506852,39.621628,0 2.507073,39.621513,0 2.507257,39.621372,0 2.507379,39.621338,0 2.507478,39.621269,0 2.507535,39.621178,0 2.507534,39.621075,0 2.507639,39.620815,0 2.507732,39.620747,0 2.507787,39.620655,0 2.507802,39.620548,0 2.507995,39.620438,0 2.508233,39.620392,0 2.508808,39.619892,0 2.509002,39.619781,0 2.509126,39.619781,0 2.509308,39.619926,0 2.509418,39.62009,0 2.509344,39.620167,0 2.50922,39.620136,0 2.509114,39.620152,0 2.50896,39.620319,0 2.508985,39.620403,0 2.509229,39.620415,0 2.509339,39.620487,0 2.509439,39.620514,0 2.51004,39.620525,0 2.510263,39.620598,0 2.51036,39.620647,0 2.510501,39.620804,0 2.510801,39.621006,0 2.511029,39.621094,0 2.511264,39.62114,0 2.511587,39.621277,0 2.511767,39.62141,0 2.512254,39.621628,0 2.512524,39.621944,0 2.512627,39.62199,0 2.512674,39.622078,0 2.512904,39.622192,0 2.5129,39.622295,0 2.512976,39.622353,0 2.513251,39.622372,0 2.513332,39.622456,0 2.513427,39.622635,0 2.513462,39.622822,0 2.513834,39.62307,0 2.514054,39.623322,0 2.514077,39.623417,0 2.514136,39.623489,0 2.514522,39.623741,0 2.515031,39.624287,0 2.515283,39.624489,0 2.515521,39.624596,0 2.516111,39.624733,0 2.516565,39.624905,0 2.516827,39.624901,0 2.517081,39.624943,0 2.517215,39.62492,0 2.517504,39.624767,0 2.517832,39.624489,0 2.518027,39.624363,0 2.518157,39.624378,0 2.518273,39.624352,0 2.518505,39.624119,0 2.518472,39.623825,0 2.51832,39.62365,0 2.518241,39.623466,0 2.518255,39.623276,0 2.518389,39.623116,0 2.518361,39.622936,0 2.518297,39.622841,0 2.518188,39.622478,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Galilea Puigpunyent  (parte 2)</name>
+			<styleUrl>#line-FF0014-4000-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					2.518185,39.622467,0 2.518175,39.622288,0 2.518076,39.622089,0 2.517945,39.621929,0 2.517929,39.621838,0 2.518025,39.621681,0 2.518136,39.621639,0 2.518509,39.621609,0 2.518824,39.621437,0 2.519286,39.621304,0 2.519664,39.620922,0 2.519911,39.620716,0 2.520166,39.620731,0 2.520628,39.620846,0 2.52127,39.620872,0 2.521384,39.620865,0 2.521614,39.620777,0 2.521714,39.620701,0 2.521943,39.620625,0 2.522174,39.62064,0 2.52299,39.620434,0 2.52349,39.620434,0 2.524316,39.620247,0 2.525432,39.620312,0 2.525572,39.620338,0 2.525614,39.620426,0 2.525792,39.620533,0 2.525878,39.620701,0 2.525999,39.620747,0 2.526266,39.620926,0 2.526408,39.620979,0 2.526485,39.621056,0 2.526624,39.620792,0 2.526635,39.620689,0 2.526694,39.620613,0 2.526802,39.620579,0 2.526737,39.620651,0 2.526636,39.620697,0 2.526535,39.620872,0 2.526335,39.620747,0 2.526095,39.620743,0 2.526223,39.620945,0 2.526091,39.620743,0 2.526203,39.620815,0 2.526319,39.620983,0 2.526339,39.621178,0 2.526422,39.621349,0 2.526522,39.621391,0 2.526614,39.621475,0 2.526642,39.621563,0 2.526741,39.621555,0 2.526992,39.621689,0 2.526996,39.62178,0 2.527127,39.621925,0 2.527065,39.622025,0 2.527196,39.622166,0 2.527131,39.622368,0 2.527179,39.622543,0 2.527137,39.622646,0 2.527196,39.622723,0 2.527315,39.622784,0 2.527356,39.622868,0 2.527365,39.623081,0 2.527459,39.623249,0 2.52739,39.623325,0 2.527337,39.623253,0 2.527232,39.622864,0 2.527142,39.622799,0 2.52711,39.622505,0 2.52713,39.622406,0 2.527094,39.622326,0 2.527112,39.622215,0 2.527037,39.62204,0 2.52693,39.621979,0 2.526806,39.621971,0 2.526575,39.622017,0 2.526363,39.622124,0 2.52613,39.622177,0 2.525747,39.622166,0 2.525534,39.622208,0 2.525409,39.622166,0 2.525531,39.622162,0 2.525603,39.622231,0 2.525851,39.622227,0 2.526188,39.62215,0 2.526531,39.622009,0 2.52677,39.621979,0 2.526777,39.621883,0 2.526522,39.621693,0 2.526517,39.621502,0 2.526347,39.621353,0 2.52636,39.621265,0 2.526216,39.620861,0 2.526157,39.620777,0 2.526035,39.620754,0 2.525942,39.620697,0 2.526031,39.620575,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Galilea Puigpunyent  (fin)</name>
+			<description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/B46TYtMJvusMlMkJOTdiJ-kewC5EeKkeo64teY01mZuCOk2yjg6FciIVPoByq4Yy1aLIc4qkfcVHm8IzDiVSABQDH2AVjX2b-LgVIMxdJdwMwPwO17G9f0fohy-zuIE9WxBC-unhurYpBeDs6woCzSB4YjOF69FW8wvzQKBFn5usnPRXbWTC4haPW24Ecg4F-C-eWOuSC1dDPTlHUxUXezyF0hoU3UaHpPr1a9HVIRXZgd_9jAcgdPy5aP93Vdcrk0VAMY5ae_Mj1o7qxcB9gg0KUxjVV87zjsbeG6UYr2eMDq5q8yhKWPI2OJaHDbdR-tafQRjZpZ47BBc-cZtu-UAV-isUmwHbS9MDIFmhZ6-ZJtPzj9IxEdxCtN6tQBtAMqgHvzoXGCi5zAvafw_36eERBYWzlK9LS641IG_xZPJLtjfEzTiHqHbnI3gTSIbUG7zUIUtoq47vG42P0Q9Ffm-8C68yAl_x6bqaautq4HRt4VoCny3pcyS2vFNUnDRjop0ONh5b6EGSEbWqelsZ5JxPBekG4TF0oA48aSYhU1gg0ekRpwnwx0q4B14kXKwqVO48CCYAIfgyP2rcbz19Q_1KirzpcmFrYnCJFVd7bjYKPwpevo7MS08Ks7A9EXAsYg0eF56DdJ9WBAyA9Jliau-Z_nlfPoOWPYxOc_uB4fs_LeoRNvfTtYntx0_AyKkiTOmo6uFAU_jwApa6bWRdjJd88LWKf8zEbJ30qjh2uHHOtAf-yDNiHeekM_YxfYAIn9FeVqvPj64lfkQSTf_gWMUA_z6ZmsmGpY8QGAciYlNe6Vix02zvYauFqNVs4D_LJFDDpUg7Ju52-bpBe2dfuszYSjZmztNgAgxqcQswAlCKGQhD9ET3V8a3yV2meRUj8wv5SbgS0hoeB6pWQeI4vy0S5UfM7sFYCPjK_3WwmCJku9egAuwgOiDX80GjQrlPpCSmmtUK5xXCLCgTrfDDRDzK1FFbvBcG8lcKwGTsU-QImkgPrsYeIUa2ns-pz6Qy5L067FJNTiG7L54akPX52f7lEoNscQN3RzBrmXf5T6N6nNA2jozSWfijlnerANCbeDMT01zg5Mwtd077bi860bEt86HXZhB2OqVMPCEj18URf7gI9pVejIMJPnNQVXY89bV6ECZi5uSiYC_FSz_uv3o6q-w3_Ws7ztWy-1ve3JNWETC2FaqaTkvG-047whUOMPpaTWnBshoWD0gGeLZAsI9zR5MUubekXpDMuSBjH3qBbfo_GWFOFKcNG5E1sv1LK_19f9jFgMh6miiTf3QoYcAkoTsuGAxo3jNU9VaOPSwXWjmsMDuSLVOy6NPdU2A3fMU2t6aWhjI-mZpoYlCbZdLuxjaL8QieaAFCX8XpGa6_wMt5lYbL-TxaGB0cYeec4Ag9BCfKH5arz2N_Ac0fvg6yUZ_NLHF8NeHIWU_0BQZV0ZzaAtQ4IbEZ_TMdF_gkH6v-C2NSMlWldP72ksRSemp9ZdtO16c7JGpBI6kh4oAI48YdU4PMMuArMQj5JcnX2yI_pALpG40Tt9p6x91kXJu0wFEutkQ4jO7AyFFKlp97KSMGVzYLoX2Mh7phBrxKEyJzuPfPbOkxp-tS8Tf5UMIDQ9W8kiO6Jfpw0pKUOL3xZT-g-Qtt56HLd4kf7Y1Q5h4_ZqUngbFvRwbDMP_bVD7dFreBGbY9uYY6TdhMX7QvJBinRtbkiVRDiie7uOw_oiRYcZnPBuhC-bUpG2VjzQPJ1Jr_yW1cshB8V1pBgDGhbHQpns8vkgc7t-ghYNVwOxNz24-YDKdR5X0KBypPvNbPnWPw62-IxD8MrdM" height="200" width="auto" /><br><br>Creada mediante Google My Tracks (http://www.google.com/mobile/mytracks) en Android<br>Nombre: Galilea Puigpunyent <br>Tipo de actividad: recorrido a pie<br>Descripción: -<br>Distancia total: 4,92 km (3,1 mi)<br>Tiempo total: 1:17:30<br>Tiempo de movimiento: 1:10:09<br>Velocidad media: 3,81 km/h (2,4 mi/h)<br>Velocidad de movimiento media: 4,21 km/h (2,6 mi/h)<br>Velocidad máxima: 13,71 km/h (8,5 mi/h)<br>Ritmo medio: 15:46 min/km (25:22 min/mi)<br>Ritmo de movimiento medio: 14:16 min/km (22:58 min/mi)<br>Ritmo máximo: 4:23 min/km (7:03 min/mi)<br>Elevación máxima: 506 m (1659 ft)<br>Elevación mínima: 257 m (844 ft)<br>Aumento de elevación: 551 m (1809 ft)<br>Pendiente máxima: 14 %<br>Pendiente mínima: -29 %<br>Registro: 11/5 12:29]]></description>
+			<styleUrl>#icon-22</styleUrl>
+			<ExtendedData>
+				<Data name="gx_media_links">
+					<value>https://lh3.googleusercontent.com/proxy/B46TYtMJvusMlMkJOTdiJ-kewC5EeKkeo64teY01mZuCOk2yjg6FciIVPoByq4Yy1aLIc4qkfcVHm8IzDiVSABQDH2AVjX2b-LgVIMxdJdwMwPwO17G9f0fohy-zuIE9WxBC-unhurYpBeDs6woCzSB4YjOF69FW8wvzQKBFn5usnPRXbWTC4haPW24Ecg4F-C-eWOuSC1dDPTlHUxUXezyF0hoU3UaHpPr1a9HVIRXZgd_9jAcgdPy5aP93Vdcrk0VAMY5ae_Mj1o7qxcB9gg0KUxjVV87zjsbeG6UYr2eMDq5q8yhKWPI2OJaHDbdR-tafQRjZpZ47BBc-cZtu-UAV-isUmwHbS9MDIFmhZ6-ZJtPzj9IxEdxCtN6tQBtAMqgHvzoXGCi5zAvafw_36eERBYWzlK9LS641IG_xZPJLtjfEzTiHqHbnI3gTSIbUG7zUIUtoq47vG42P0Q9Ffm-8C68yAl_x6bqaautq4HRt4VoCny3pcyS2vFNUnDRjop0ONh5b6EGSEbWqelsZ5JxPBekG4TF0oA48aSYhU1gg0ekRpwnwx0q4B14kXKwqVO48CCYAIfgyP2rcbz19Q_1KirzpcmFrYnCJFVd7bjYKPwpevo7MS08Ks7A9EXAsYg0eF56DdJ9WBAyA9Jliau-Z_nlfPoOWPYxOc_uB4fs_LeoRNvfTtYntx0_AyKkiTOmo6uFAU_jwApa6bWRdjJd88LWKf8zEbJ30qjh2uHHOtAf-yDNiHeekM_YxfYAIn9FeVqvPj64lfkQSTf_gWMUA_z6ZmsmGpY8QGAciYlNe6Vix02zvYauFqNVs4D_LJFDDpUg7Ju52-bpBe2dfuszYSjZmztNgAgxqcQswAlCKGQhD9ET3V8a3yV2meRUj8wv5SbgS0hoeB6pWQeI4vy0S5UfM7sFYCPjK_3WwmCJku9egAuwgOiDX80GjQrlPpCSmmtUK5xXCLCgTrfDDRDzK1FFbvBcG8lcKwGTsU-QImkgPrsYeIUa2ns-pz6Qy5L067FJNTiG7L54akPX52f7lEoNscQN3RzBrmXf5T6N6nNA2jozSWfijlnerANCbeDMT01zg5Mwtd077bi860bEt86HXZhB2OqVMPCEj18URf7gI9pVejIMJPnNQVXY89bV6ECZi5uSiYC_FSz_uv3o6q-w3_Ws7ztWy-1ve3JNWETC2FaqaTkvG-047whUOMPpaTWnBshoWD0gGeLZAsI9zR5MUubekXpDMuSBjH3qBbfo_GWFOFKcNG5E1sv1LK_19f9jFgMh6miiTf3QoYcAkoTsuGAxo3jNU9VaOPSwXWjmsMDuSLVOy6NPdU2A3fMU2t6aWhjI-mZpoYlCbZdLuxjaL8QieaAFCX8XpGa6_wMt5lYbL-TxaGB0cYeec4Ag9BCfKH5arz2N_Ac0fvg6yUZ_NLHF8NeHIWU_0BQZV0ZzaAtQ4IbEZ_TMdF_gkH6v-C2NSMlWldP72ksRSemp9ZdtO16c7JGpBI6kh4oAI48YdU4PMMuArMQj5JcnX2yI_pALpG40Tt9p6x91kXJu0wFEutkQ4jO7AyFFKlp97KSMGVzYLoX2Mh7phBrxKEyJzuPfPbOkxp-tS8Tf5UMIDQ9W8kiO6Jfpw0pKUOL3xZT-g-Qtt56HLd4kf7Y1Q5h4_ZqUngbFvRwbDMP_bVD7dFreBGbY9uYY6TdhMX7QvJBinRtbkiVRDiie7uOw_oiRYcZnPBuhC-bUpG2VjzQPJ1Jr_yW1cshB8V1pBgDGhbHQpns8vkgc7t-ghYNVwOxNz24-YDKdR5X0KBypPvNbPnWPw62-IxD8MrdM</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>2.526031,39.620575,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Indicaciones de ruta a pie para Llegada - Galilea @39.61344128156282,2.5035524368286133</name>
+			<styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					2.524403,39.619989,0 2.524523,39.62016,0 2.525265,39.620236,0 2.525434,39.620237,0 2.525251,39.620096,0 2.525154,39.619992,0 2.524734,39.619437,0 2.524181,39.618933,0 2.524084,39.618806,0 2.524006,39.618632,0 2.523871,39.618212,0 2.523771,39.618032,0 2.52358,39.617819,0 2.523392,39.617663,0 2.523249,39.61756,0 2.52291,39.617361,0 2.522778,39.61719,0 2.522745,39.617052,0 2.522742,39.616822,0 2.522754,39.61674,0 2.522846,39.616507,0 2.522824,39.616358,0 2.52289,39.616063,0 2.522882,39.616013,0 2.522811,39.615904,0 2.522711,39.615825,0 2.52231,39.615663,0 2.522216,39.615592,0 2.522167,39.615471,0 2.522167,39.615226,0 2.522136,39.615061,0 2.522021,39.614887,0 2.521801,39.614679,0 2.521738,39.614635,0 2.521647,39.614597,0 2.520855,39.614409,0 2.520641,39.61439,0 2.519935,39.614372,0 2.519829,39.614343,0 2.519726,39.614276,0 2.519672,39.614189,0 2.519737,39.613834,0 2.51975,39.613645,0 2.519705,39.613463,0 2.519633,39.61335,0 2.519458,39.613257,0 2.519189,39.613208,0 2.518939,39.613132,0 2.518559,39.612957,0 2.51847,39.612941,0 2.518428,39.612949,0 2.518388,39.612982,0 2.518377,39.613037,0 2.518406,39.613144,0 2.518568,39.613384,0 2.518568,39.613436,0 2.518535,39.613499,0 2.518445,39.613526,0 2.518225,39.613534,0 2.51804,39.6136,0 2.517937,39.613589,0 2.517888,39.613539,0 2.517862,39.61339,0 2.517816,39.613287,0 2.517611,39.613032,0 2.516598,39.611575,0 2.516473,39.611348,0 2.516478,39.61129,0 2.516502,39.611254,0 2.516566,39.611226,0 2.516677,39.611225,0 2.516885,39.611277,0 2.517414,39.611477,0 2.517522,39.611494,0 2.517588,39.611482,0 2.517688,39.611419,0 2.517859,39.611205,0 2.51791,39.611099,0 2.517921,39.610994,0 2.518015,39.61076,0 2.517981,39.610683,0 2.517942,39.610673,0 2.517879,39.610691,0 2.517741,39.610929,0 2.517604,39.61101,0 2.517485,39.611054,0 2.517352,39.611069,0 2.517248,39.611033,0 2.517002,39.610767,0 2.516898,39.610625,0 2.516835,39.610462,0 2.516788,39.610064,0 2.516689,39.609858,0 2.516602,39.609725,0 2.516498,39.609613,0 2.516491,39.609526,0 2.516521,39.609492,0 2.516576,39.609485,0 2.516635,39.609499,0 2.51669,39.60954,0 2.517102,39.610314,0 2.517145,39.610364,0 2.517186,39.610377,0 2.517259,39.610347,0 2.517289,39.61026,0 2.517266,39.61004,0 2.517277,39.609708,0 2.51725,39.609573,0 2.516895,39.608786,0 2.516849,39.6087,0 2.516761,39.608642,0 2.516598,39.608604,0 2.516439,39.608613,0 2.516141,39.608666,0 2.516015,39.608721,0 2.51518,39.609179,0 2.515021,39.609226,0 2.514859,39.609248,0 2.514692,39.609218,0 2.514133,39.609025,0 2.513816,39.60899,0 2.513609,39.608946,0 2.51301,39.608733,0 2.512604,39.608703,0 2.512345,39.60864,0 2.511678,39.608406,0 2.511129,39.608185,0 2.510968,39.60816,0 2.510889,39.608186,0 2.510866,39.608253,0 2.510885,39.608302,0 2.511386,39.608985,0 2.511404,39.609088,0 2.511369,39.609183,0 2.511329,39.60926,0 2.511257,39.609319,0 2.511153,39.609373,0 2.510881,39.609451,0 2.510399,39.609534,0 2.510289,39.609539,0 2.510234,39.609534,0 2.510128,39.609489,0 2.509482,39.609012,0 2.509186,39.608852,0 2.509063,39.608805,0 2.508925,39.608777,0 2.50817,39.608657,0 2.508052,39.608662,0 2.507968,39.608687,0 2.507806,39.608772,0 2.507716,39.609009,0 2.507522,39.60922,0 2.507403,39.609295,0 2.507307,39.609308,0 2.507182,39.609295,0 2.506994,39.609175,0 2.506795,39.609011,0 2.506691,39.608888,0 2.50649,39.608756,0 2.506113,39.608326,0 2.506033,39.608282,0 2.50521,39.607951,0 2.504821,39.607868,0 2.50462,39.607857,0 2.504534,39.60787,0 2.504275,39.60798,0 2.50447,39.608124,0 2.504853,39.608321,0 2.504946,39.608336,0 2.505318,39.608326,0 2.505611,39.608404,0 2.50572,39.608464,0 2.505867,39.608642,0 2.506048,39.608807,0 2.506072,39.608931,0 2.506044,39.609176,0 2.506078,39.609247,0 2.506342,39.609471,0 2.506386,39.609525,0 2.506401,39.609724,0 2.506351,39.609871,0 2.506367,39.609961,0 2.506339,39.610145,0 2.506478,39.610367,0 2.506638,39.610349,0 2.506968,39.610187,0 2.506934,39.610414,0 2.506946,39.610497,0 2.50705,39.610719,0 2.507149,39.610777,0 2.507283,39.610803,0 2.507335,39.610831,0 2.507589,39.611239,0 2.507618,39.611333,0 2.507616,39.61144,0 2.507551,39.611676,0 2.507542,39.61178,0 2.507562,39.611818,0 2.507688,39.611923,0 2.507601,39.6122,0 2.507544,39.612253,0 2.507422,39.612241,0 2.506894,39.612088,0 2.506587,39.611894,0 2.506507,39.61186,0 2.50639,39.61184,0 2.506272,39.611857,0 2.506177,39.611888,0 2.505964,39.611907,0 2.505283,39.611936,0 2.50522,39.611967,0 2.505024,39.612152,0 2.504863,39.612245,0 2.504728,39.612278,0 2.504708,39.612499,0 2.504651,39.612707,0 2.504629,39.612966,0 2.504607,39.613003,0 2.504495,39.613083,0 2.504651,39.61318,0 2.504749,39.613219,0 2.50483,39.613231,0 2.504957,39.613219,0 2.504986,39.61323,0 2.505095,39.613358,0 2.505128,39.613428,0 2.504809,39.61352,0 2.504496,39.613518,0 2.50439,39.613626,0 2.504355,39.61365,0 2.504301,39.613662,0 2.504091,39.613589,0 2.503843,39.613464,0 2.503539,39.613457,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>A</name>
+			<styleUrl>#icon-ci-1-nodesc</styleUrl>
+			<Point>
+				<coordinates>2.5244,39.61999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B</name>
+			<styleUrl>#icon-ci-2-nodesc</styleUrl>
+			<Point>
+				<coordinates>2.50354,39.61345,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
