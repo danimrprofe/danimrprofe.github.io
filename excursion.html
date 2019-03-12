@@ -2,23 +2,37 @@
 <html>
 	<head>
         <meta charset="utf-8">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+       <link rel="stylesheet" href="css/style.css" />
+     
 		<style>
 	      .map {
 	        height: 700px;
-	        width: 1000px;
+	        width: 100%
 	      }
 	    </style>
 	    <script src="js/ol.js"></script>
 	    <title>OpenLayers example</title>
     </head>	
 	  <body>
-          <h1>Pruebas con OpenLayer</h1>
-          <p>
-            Pruebas con mapas utilizando la API de OpenLayer. Se ha utilizado la versión: v5.3.0. 
-            El archivo de la API es ol.js.
-          </p>
-          <h2>Volta del general</h2>
+          <main>
+<div id="landing">
+      <div id="landing-text">
+        <div id="landing-text-inner">
+            <h1>Pruebas con OpenLayer</h1>
+            <h2>Pruebas con mapas utilizando la API de OpenLayer. Se ha utilizado la versión: v5.3.0. El archivo de la API es ol.js.</h2>
+          <h2>Web realizada con HTML5, CSS y jQuery</h2>
+          <a href="#images" class="btn" id="view-work">
+            View work
+          </a>
+        </div>
+      </div>
+      <div id="landing-image"></div>
+    </div>
+            <div class="caption">
+    
+                <h3>Volta del general</h3>
           <p>
             Itinerario de la excursión que parte del parking que hay antes de llegar a
             Banyalbufar, donde se dejará el coche. Al final de un camino de tierra,
@@ -27,6 +41,7 @@
             Terminamos la excursión en la platja de Son Bunyola, poco antes de llegar
             al Port des Canonge.
           </p>
+              </div>
 	    <div id="map" class="map"></div>
 
           <h2>Mapa general de Mallorca</h2>
@@ -43,8 +58,22 @@
 		<button id="centro_mallorca">Volta des general</button> 
         
 	    <script src="js/funciones_openlayer.js" type="text/javascript"></script>
-	  </body>
-
-
+	  
+          </main>
+  <footer>
+    <h3>Contacto</h3>
+    <p>
+        Correo electrónico
+    </p>
+    <p>
+        Email: <strong>kelso@hellowinsconsin.com</strong>
+    </p>
+  </footer>
+  <script
+  			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
 

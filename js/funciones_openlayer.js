@@ -1,12 +1,21 @@
-	var center_cami_des_correu = ol.proj.fromLonLat([2.5307, 39.6844]);
-			var center_volta_des_general = ol.proj.fromLonLat([2.5338, 39.6951]);
 
-			var centro_mallorca = ol.proj.fromLonLat([2.5, 39.6]);
-			// primero creamos una view, la centramos y le metemos el zoom que queremos
+            // Definimos los centros de nuestros mapas
+
+            var center_cami_des_correu = ol.proj.fromLonLat([2.5389, 39.6922]);
+			var center_volta_des_general = ol.proj.fromLonLat([2.5338, 39.6951]);
+            var center_isla_mallorca = ol.proj.fromLonLat([2.7892, 39.6157]);
+
+            // Haremos una view para cada mapa
+			// Creamos una view, la centramos y le metemos el zoom que queremos
 
 			var vistaVoltaGeneral = new ol.View({
-	        	center: ol.proj.fromLonLat([2.5338, 39.6951]),
+	        	center: center_volta_des_general,
 	        	zoom: 15
+	        });
+
+            var vistaMallorca = new ol.View({
+	        	center: center_isla_mallorca,
+	        	zoom: 10
 	        });
 
 			// Nuestra capa base será un mapa OSM del mapamundi
@@ -30,10 +39,7 @@
             // Creamos nuestro mapa de Mallorca y le metemos la capa del mapamundi
             // Este mapa va a caer en el DIV con class capa_base
             
-            var vistaMallorca = new ol.View({
-	        	center: ol.proj.fromLonLat([2.7892, 39.6157]),
-	        	zoom: 10
-	        });
+
 				
 		   	var mapaMallorca = new ol.Map({
 		        target: 'mapaMallorca',
