@@ -1,4 +1,6 @@
 
+
+
 // Definimos los centros de nuestros mapas
 
 var center_cami_des_correu = ol.proj.fromLonLat([2.5389, 39.6922]);
@@ -29,61 +31,30 @@ var capa_base = new ol.layer.Tile({
 
 var mapaCorreu = new ol.Map({
     target: 'map',
-    layers: [ capa_base ],
+    layers: [capa_base],
     view: vistaVoltaGeneral,
     loadTilesWhileAnimating: true
 });
 
 var mapaMallorca = new ol.Map({
     target: 'mapaMallorca',
-    layers: [ capa_base ],
+    layers: [capa_base],
     view: vistaMallorca
 });
 
 
 
-// Vamos a crear una segunda capa en la que incluiremos los POIs (point of interest)
-// Hay que transformar las coordenadas porque sino no va
-
-var mountains = [];
-
-mountains.push(ol.proj.transform([2.52145, 39.69000], 'EPSG:4326', 'EPSG:3857'));
-mountains.push(ol.proj.transform([2.79782, 39.81050], 'EPSG:4326', 'EPSG:3857'));
-mountains.push(ol.proj.transform([2.8529806, 39.8060306], 'EPSG:4326', 'EPSG:3857'));
-
-
-/*var tossals
-var tomir
-var alfabia
-var teix
-var galatzo
-var puig roig
-N39 47 2.96 E2 49 13.41
- N39 50 35.53 E2 55 32.51
- N39 44 35.94 E2 43 56.86
- N39 43 52.68 E2 39 40.91
- N39 38 2.17 E2 29 12.01
- N39 51 38.43 E2 51 37.79*/
 
 
 
-// Creamos una característica que contenga un punto en donde queremos
 
-var pointFeature = new ol.Feature(
-    new ol.geom.Point(mountains[0])
-);
 
-var pointFeature2 	= new ol.Feature(
-    new ol.geom.Point(mountains[1])
-);
 
-var pointFeature3 	= new ol.Feature(
-    new ol.geom.Point(mountains[2])
-);
+
 // Esto es el icono que quería poner como marcador. La cosa es que da problemas
 // Al hacer zoom in y out se va donde le da la gana. Lo he cambiado por un círculo. No se llega a usar
 
-var imagen_refugio = new ol.style.Icon ({
+var imagen_refugio = new ol.style.Icon({
     anchor: [0.5, 0.5],
     anchorXUnits: 'fraction',
     anchorYUnits: 'fraction',
@@ -91,7 +62,7 @@ var imagen_refugio = new ol.style.Icon ({
     src: 'img/home.png'
 });
 
-var image_mountain = new ol.style.Icon ({
+var image_mountain = new ol.style.Icon({
     anchor: [0.5, 0.5],
     anchorXUnits: 'fraction',
     anchorYUnits: 'fraction',
@@ -121,8 +92,8 @@ var trazo = new ol.style.Stroke({
 
 var circulo = new ol.style.Circle({
     radius: 7,
-    fill: new ol.style.Fill({ color: 'black'}),
-    stroke: new ol.style.Stroke({ color: 'white', width: 2})
+    fill: new ol.style.Fill({ color: 'black' }),
+    stroke: new ol.style.Stroke({ color: 'white', width: 2 })
 });
 
 // Creamos un estilo
@@ -134,22 +105,38 @@ var circulo_negro = new ol.style.Style({
 });
 
 var estilo_mountain = new ol.style.Style({
-   image: image_mountain 
+    image: image_mountain
 });
 
 // Creamos un layer y la añadimos al mapa
 
-var vectorSource = new ol.source.Vector({
-    features: [ pointFeature,
-               pointFeature2,
-               pointFeature3
-              ]
-});
 
+// -------------------------- //
+//  MONTAÑAS MÁS IMPORTANTES //
+// -------------------------- //
+
+// Vamos a crear una segunda capa en la que incluiremos los POIs (point of interest)
+// Hay que transformar las coordenadas porque sino no va
+
+var mountains = [];
+
+mountains.push(ol.proj.transform([2.52145, 39.69000], 'EPSG:4326', 'EPSG:3857'));
+mountains.push(ol.proj.transform([2.79782, 39.81050], 'EPSG:4326', 'EPSG:3857'));
+mountains.push(ol.proj.transform([2.8529806, 39.8060306], 'EPSG:4326', 'EPSG:3857'));
+
+// Creamos una característica que contenga un punto en donde queremos
+
+var caracteristicas = [];
+
+caracteristicas.push(new ol.Feature({ geometry: new ol.geom.Point(mountains[0]), name: 'Null Island' }))
+caracteristicas.push(new ol.Feature({ geometry: new ol.geom.Point(mountains[1]), name: 'Null Island' }))
+caracteristicas.push(new ol.Feature({ geometry: new ol.geom.Point(mountains[2]), label: 'hola', name: 'Null Island' }))
 
 
 var capa_verGeo = new ol.layer.Vector({
-    source: vectorSource,
+    source: new ol.source.Vector({
+        features: caracteristicas
+    }),
     style: estilo_mountain
 });
 
@@ -182,9 +169,9 @@ var style = {
     })
 };
 
-// Pruebas con mapas KML
-// Por el motivo que sea los KML de Google Earth no los coge bien
-//import KMLSource from 'ol/source/KML';
+// -------------------------- //
+//  MAPAS KML //
+// -------------------------- //
 
 var capa_refugios = new ol.layer.Vector({
     source: new ol.source.Vector({
@@ -208,7 +195,7 @@ var exc_cami_des_correu = new ol.layer.Vector({
             //showPointNames: true
         })
     }),
-    style: function(feature) {
+    style: function (feature) {
         return style[feature.getGeometry().getType()];
     }
 });
@@ -220,10 +207,27 @@ var exc_port_des_canonge = new ol.layer.Vector({
         url: 'gpx/B4122_015_Canonge.gpx',
         format: new ol.format.GPX()
     }),
-    style: function(feature) {
+    style: function (feature) {
         return style[feature.getGeometry().getType()];
     }
 });
+
+var missitios = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        //projection: 'EPSG:3857',
+        url: 'kml/missitios.kml',
+        format: new ol.format.KML({
+            extractStyles: false,
+            //showPointNames: true
+        })
+    }),
+    style: function (feature) {
+        return style[feature.getGeometry().getType()];
+    }
+});
+
+mapaMallorca.addLayer(missitios);
+
 
 
 mapaCorreu.addLayer(exc_port_des_canonge);
@@ -240,10 +244,10 @@ function onClick(id, callback) {
     document.getElementById(id).addEventListener('click', callback);
 }
 
-onClick('pal-to-cami_des_correu', 	function() { recentrar(center_cami_des_correu, 2000, 14); });
-onClick('pal-to-volta_des_general', function() { recentrar(center_volta_des_general, 2000, 15); });
+onClick('pal-to-cami_des_correu', function () { recentrar(center_cami_des_correu, 2000, 14); });
+onClick('pal-to-volta_des_general', function () { recentrar(center_volta_des_general, 2000, 15); });
 
-function recentrar(centro_mapa, duracion, zoom){
+function recentrar(centro_mapa, duracion, zoom) {
     vistaMallorca.animate({
         center: centro_mapa,
         duration: duracion,
@@ -258,72 +262,72 @@ function recentrar(centro_mapa, duracion, zoom){
 
 /*
 
-				var vs = new ol.source.Vector({
+                var vs = new ol.source.Vector({
 //projection: 'EPSG:3857',
 url: 'kml/exc_cami_des_correu.kml',
 format: new ol.format.KML({
-					extractStyles: false,
-					//showPointNames: true
-				})
+                    extractStyles: false,
+                    //showPointNames: true
+                })
 })
 
 //				alert(vs.getExtent());
 
-		mapaMallorca.getView().fit(
-			vs.getExtent(), 
-			{ duration: 1000 }
-		);
-		mapaMallorca.setCenter();
-		*/
+        mapaMallorca.getView().fit(
+            vs.getExtent(), 
+            { duration: 1000 }
+        );
+        mapaMallorca.setCenter();
+        */
 
 
 
 var kmlSources = ['gpx/B4122_001_Bruta.gpx',
-                  'gpx/B4122_002_Andritxol.gpx',
-                  'gpx/B4122_003_PortalsVells.gpx',
-                  'gpx/B4122_004_Farineta.gpx',
-                  'gpx/B4122_005_dAndratx-SantElm.gpx',
-                  'gpx/B4122_006_Dragonera.gpx',
-                  'gpx/B4122_007_Trapa.gpx',
-                  'gpx/B4122_008_Fab¡oler.gpx',
-                  'gpx/B4122_009_MiradordesesSinies.gpx',
-                  'gpx/B4122_010_SEsclop.gpx',
-                  'gpx/B4122_011_Galatzo_A.gpx',
-                  'gpx/B4122_012_Galatzo_B_neu-zusammen.gpx',
-                  'gpx/B4122_013_FitadelRam.gpx',
-                  'gpx/B4122_014_Correu.gpx',
-                  'gpx/B4122_015_Canonge.gpx',
-                  'gpx/B4122_016_Valldemossa_A.gpx',
-                  'gpx/B4122_017_Valldemossa_B.gpx',
-                  'gpx/B4122_018_Valldemossa-Dei.gpx',
-                  'gpx/B4122_020_Foradada.gpx',
-                  'gpx/B4122_021_Bunyola.gpx',
-                  'gpx/B4122_022_Soller-Dei.gpx',
-                  'gpx/B4122_02B_deCostello-Soller.gpx',
-                  'gpx/B4122_024_Calobra.gpx',
-                  'gpx/B4122_025_Cuber-Soller.gpx',
-                  'gpx/B4122_026_TossalsVerds.gpx',
-                  'gpx/B4122_027_CanaletadeMassanella.gpx',
-                  'gpx/B4122_028_CastelldAlaro.gpx',
-                  'gpx/B4122_029_Cuber-Lluc.gpx',
-                  'gpx/B4122_030_lluc.gpx',
-                  'gpx/B4122_0B1_TorrentdePare¡s_A.gpx',
-                  'gpx/B4122_032_TorrentdePare¡s_B.gpx',
-                  'gpx/B4122_033_TorredesaMoladeTuent.gpx',
-                  'gpx/B4122_034_PuigRoig.gpx',
-                  'gpx/B4122_035_Tomir.gpx',
-                  'gpx/B4122_036_deLluc.gpx',
-                  'gpx/B4122_037_Massanella_A.gpx',
-                  'gpx/B4122_038_Massanella_B.gpx',
-                  'gpx/B4122_039_Mortitx.gpx',
-                  'gpx/B4122_041_Maria.gpx',
-                  'gpx/B4122_042_Boquer.gpx',
-                  'gpx/B4122_043_CastelldelRei.gpx',
-                  'gpx/B4122_044_Fumat.gpx',
-                  'gpx/B4122_019_SEstaca.gpx'];
+    'gpx/B4122_002_Andritxol.gpx',
+    'gpx/B4122_003_PortalsVells.gpx',
+    'gpx/B4122_004_Farineta.gpx',
+    'gpx/B4122_005_dAndratx-SantElm.gpx',
+    'gpx/B4122_006_Dragonera.gpx',
+    'gpx/B4122_007_Trapa.gpx',
+    'gpx/B4122_008_Fab¡oler.gpx',
+    'gpx/B4122_009_MiradordesesSinies.gpx',
+    'gpx/B4122_010_SEsclop.gpx',
+    'gpx/B4122_011_Galatzo_A.gpx',
+    'gpx/B4122_012_Galatzo_B_neu-zusammen.gpx',
+    'gpx/B4122_013_FitadelRam.gpx',
+    'gpx/B4122_014_Correu.gpx',
+    'gpx/B4122_015_Canonge.gpx',
+    'gpx/B4122_016_Valldemossa_A.gpx',
+    'gpx/B4122_017_Valldemossa_B.gpx',
+    'gpx/B4122_018_Valldemossa-Dei.gpx',
+    'gpx/B4122_020_Foradada.gpx',
+    'gpx/B4122_021_Bunyola.gpx',
+    'gpx/B4122_022_Soller-Dei.gpx',
+    'gpx/B4122_02B_deCostello-Soller.gpx',
+    'gpx/B4122_024_Calobra.gpx',
+    'gpx/B4122_025_Cuber-Soller.gpx',
+    'gpx/B4122_026_TossalsVerds.gpx',
+    'gpx/B4122_027_CanaletadeMassanella.gpx',
+    'gpx/B4122_028_CastelldAlaro.gpx',
+    'gpx/B4122_029_Cuber-Lluc.gpx',
+    'gpx/B4122_030_lluc.gpx',
+    'gpx/B4122_0B1_TorrentdePare¡s_A.gpx',
+    'gpx/B4122_032_TorrentdePare¡s_B.gpx',
+    'gpx/B4122_033_TorredesaMoladeTuent.gpx',
+    'gpx/B4122_034_PuigRoig.gpx',
+    'gpx/B4122_035_Tomir.gpx',
+    'gpx/B4122_036_deLluc.gpx',
+    'gpx/B4122_037_Massanella_A.gpx',
+    'gpx/B4122_038_Massanella_B.gpx',
+    'gpx/B4122_039_Mortitx.gpx',
+    'gpx/B4122_041_Maria.gpx',
+    'gpx/B4122_042_Boquer.gpx',
+    'gpx/B4122_043_CastelldelRei.gpx',
+    'gpx/B4122_044_Fumat.gpx',
+    'gpx/B4122_019_SEstaca.gpx'];
 
 
-for (var posicion=0; posicion<kmlSources.length; posicion++) {
+for (var posicion = 0; posicion < kmlSources.length; posicion++) {
 
     //alert(kmlSources[posicion]);
     var kmlLayer = new ol.layer.Vector({
@@ -331,15 +335,53 @@ for (var posicion=0; posicion<kmlSources.length; posicion++) {
             url: kmlSources[posicion],
             format: new ol.format.GPX()
         }),
-        style: function(feature) {
+        style: function (feature) {
             return style[feature.getGeometry().getType()];
         }
     });
-    //alert('adios');
+
     mapaMallorca.addLayer(kmlLayer);
 
 };
 
 mapaMallorca.addLayer(capa_verGeo);
 mapaMallorca.addLayer(capa_refugios);
+
+
+var info = document.getElementById('info');
+var target = document.getElementById('mapaMallorca');
+
+function displayFeatureInfo(pixel) {
+
+    info.style.left = pixel[0] + 'px';
+    info.style.top = pixel[1] + 200 + 'px';
+
+    var feature = mapaMallorca.forEachFeatureAtPixel(pixel, function (feature, layer) {
+        return feature;
+    });
+
+    if (feature) {
+        var text = feature.get('name');
+        info.style.display = 'none';
+        info.innerHTML = text;
+        info.style.display = 'block';
+        target.style.cursor = "pointer";
+    } else {
+        info.style.display = 'none';
+        target.style.cursor = "";
+    }
+}
+
+
+
+
+
+mapaMallorca.on('click', function (evt) {
+
+    displayFeatureInfo(evt.pixel);
+
+
+
+});
+
 

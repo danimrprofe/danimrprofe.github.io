@@ -1,79 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css"
+    />
 
-<html>
-	<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
-       <link rel="stylesheet" href="css/style.css" />
-     
-		<style>
-	      .map {
-	        height: 700px;
-	        width: 100%
-	      }
-	    </style>
-	    <script src="js/ol.js"></script>
-	    <title>OpenLayers example</title>
-    </head>	
-	  <body>
-          <main>
-<div id="landing">
-      <div id="landing-text">
-        <div id="landing-text-inner">
-            <h1>Pruebas con OpenLayer</h1>
-            <h2>Pruebas con mapas utilizando la API de OpenLayer. Se ha utilizado la versión: v5.3.0. El archivo de la API es ol.js.</h2>
-          <h2>Web realizada con HTML5, CSS y jQuery</h2>
-          <a href="#images" class="btn" id="view-work">
-            View work
-          </a>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/3.3/examples/theme/"
+    />
+
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link
+      href="../../assets/css/ie10-viewport-bug-workaround.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet" />
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9
+      ]><script src="../../assets/js/ie8-responsive-file-warning.js"></script
+    ><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .map {
+        height: 700px;
+        width: 100%;
+      }
+    </style>
+
+        <style>
+      .map {
+        width: 100%;
+        height:600px;
+      }
+      #map {
+        position: relative;
+      }
+      #info {
+        position: absolute;
+ 
+        z-index: 100;
+        background-color: rgb(234 225 218);
+        padding: 5px 10px;
+        border: 1px solid #d19868;
+        color: #7d2424;
+      }
+      .tooltip.in {
+        opacity: 1;
+      }
+      .tooltip.top .tooltip-arrow {
+        border-top-color: rgb(32, 24, 24);
+      }
+      .tooltip-inner {
+        border: 2px solid rgb(92, 79, 79);
+      }
+    </style>
+    <script src="js/ol.js"></script>
+    <title>OpenLayers example</title>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Mapas con openlayer</h1>
+        <p>Proyecto de pruebas con la API de openlayer</p>
+      </div>
+
+      <div class="page-header">Pruebas con OpenLayer</div>
+      <div class="alert alert-info" role="alert">
+        Pruebas con mapas utilizando la API de OpenLayer. Se ha utilizado la
+        versión: v5.3.0. El archivo de la API es ol.js.
+      </div>
+      <h2>Web realizada con HTML5, CSS y jQuery</h2>
+      <a href="#images" class="btn" id="view-work"> View work </a>
+
+      <div class="card">
+        <div class="card-header">Volta del general</div>
+        <div class="card-body">
+          <h5 class="card-title">Instruccions</h5>
+         <p>
+          Itinerario de la excursión que parte del parking que hay antes de
+          llegar a Banyalbufar, donde se dejará el coche. Al final de un camino
+          de tierra, se enlaza con la carretera a la altura de la posesión de
+          Son Bunyola. Terminamos la excursión en la platja de Son Bunyola, poco
+          antes de llegar al Port des Canonge.
+        </p>
+
+           <div id="map" class="map"></div>
+        
         </div>
       </div>
-      <div id="landing-image"></div>
+     
+     <div class="card">
+        <div class="card-header">Mapa general de Mallorca (mapaMallorca)</div>
+        <div class="card-body">
+          <h5 class="card-title">Instruccions</h5>
+                  <p>Excursiones de mallorca</p>
+           <div id="mapaMallorca" class="map"><div id="info"></div></div>    
+              <button id="pal-to-cami_des_correu" class="btn btn-primary">
+        Cami des correu
+      </button>
+      <button id="pal-to-volta_des_general" class="btn btn-primary">
+        Volta des general
+      </button>
+      <button id="centro_mallorca" class="btn btn-primary">
+        Volta des general
+      </button>
+        </div>
     </div>
-            <div class="caption">
+  </div>
+
+      
+
+
+
+      <footer>
+        <h3>Contacto</h3>
+        <p>Correo electrónico</p>
+        <p>Email: <strong>danimrtic en gmail.com</strong></p>
+      </footer>
     
-                <h3>Volta del general</h3>
-          <p>
-            Itinerario de la excursión que parte del parking que hay antes de llegar a
-            Banyalbufar, donde se dejará el coche. Al final de un camino de tierra,
-            se enlaza con la carretera a la altura de la posesión de Son Bunyola.
-              
-            Terminamos la excursión en la platja de Son Bunyola, poco antes de llegar
-            al Port des Canonge.
-          </p>
-              </div>
-	    <div id="map" class="map"></div>
 
-          <h2>Mapa general de Mallorca</h2>
-          <p>
-            Excursiones de mallorca
-          </p>
-          
-          
-        <div id="mapaMallorca" class="map"></div> 
+    <script src="js/funciones_openlayer.js" ></script>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-
-        <button id="pal-to-cami_des_correu">Cami des correu</button> 
-        <button id="pal-to-volta_des_general">Volta des general</button> 
-		<button id="centro_mallorca">Volta des general</button> 
-        
-	    <script src="js/funciones_openlayer.js" type="text/javascript"></script>
-	  
-          </main>
-  <footer>
-    <h3>Contacto</h3>
-    <p>
-        Correo electrónico
-    </p>
-    <p>
-        Email: <strong>kelso@hellowinsconsin.com</strong>
-    </p>
-  </footer>
-  <script
-  			  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  			  crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
-
