@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #FFD640;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #FFD640;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#FFD640;padding:15px;">
+  <h1>Institut Ramon Llull</h1>
+  <h3>Coneix el nostre institut</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"></div>
+    <a href="#pati">Pati</a>
+   </div>
+
+<div class="main">
+    
+    <h2 id="#pati">Pati</h2>
+   <p>Aquest és el pati de l'Institut de Ramon Llull, es molt gran.</p>
+   <img src="img/ramon.jpg" style="width:100%">
+   <img src="img/patio2.jpg" style="width:100%"> 
+   
+</div>
+
+
+<div class="right">
+    <h2>Que puc fer?</h2>
+    <p>Pots jugar al pati a les pistes de bàsquet, de volley i de futbol.</p>
+    <img src="img/niños juegan.jpg" style="width:100%;">
+    <img src="img/niño juega 2.jpg" style="width:100%;">
+    <h2></h2>
+    <p></p>
+
+</div>
+
+
+ <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>

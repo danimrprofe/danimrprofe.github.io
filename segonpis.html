@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      float: left;
+      width: 20%;
+
+    }
+
+    .right {
+      background-color: lightblue;
+      float: right;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+      min-width: 200px;
+
+    }
+
+
+    .menuitem {
+      padding: 8px;
+      background-color: lightgrey;
+
+
+    }
+
+
+    .main {
+      float: left;
+      width: 60%;
+      padding: 20px;
+
+    }
+
+    #peu {
+      display: block;
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      margin-top: 7px;
+      font-size: 12px;
+    }
+
+
+    h1 {
+      font-family: serif;
+      font-size: 50px;
+
+    }
+
+
+
+    @media only screen and (max-width:500px) {
+
+      /* For mobile phones: */
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+  <div style="background-color:lightblue;padding:15px;">
+    <img width="655px" align="right"
+      src="https://th.bing.com/th/id/R.365db3c9ed80dcd16ce490693f86b69c?rik=SAiidVO%2f0HF%2bhw&riu=http%3a%2f%2fwww.iesramonllull.net%2fwp-content%2fuploads%2f2016%2f03%2fcropped-Cabecera3.jpg&ehk=WjJg0rSepDEPLjvE%2fTXDNYbSoas4n8AbAnLocWWfrNg%3d&risl=&pid=ImgRaw&r=0"></img>
+    <h1>SEGON PIS</h1>
+    <h4><i>On es formen els millors alumnes del món!</i></h4>
+
+
+  </div>
+
+
+  <div class="menu">
+
+    <div class="menuitem" style="margin-top: 7px;">
+      <a href="index.html">Inici</a>
+    </div>
+    <div class="menuitem"><b>CLASSES:</b></div>
+    <div class="menuitem"><a href="#2a">Aula 2.2 (2n BAT A)</a></div>
+    <div class="menuitem"><a href="#2b">Aula Audiovisuals (2n BAT B)</a></div>
+    <div class="menuitem"><a href="museu.html">Museu</a></div>
+    <div class="menuitem"><a href="laboratoris.html">Laboratoris</a></div>
+    <div class="menuitem"><a href="#elrellotge">El rellotge</a></div>
+    <div class="menuitem"><a href="#aules">Aules de desdoblament</a></div>
+    <div class="menuitem"></div>
+    <div class="menuitem"><b>EL SEGON PIS:</b></div>
+    <div class="menuitem"><iframe width="100%" src="https://www.youtube.com/embed/5oSju9Pz8dg"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></div>
+
+
+  </div>
+
+
+
+
+  <div class="main">
+
+    <div>
+      <p>El segon pis és aquell en què es localitzen majoritàriament els alumnes de 2n de batxillerat, a més de tenir
+        alguns importants laboratoris, departaments i aules especials que milloren i fan més didàctic l'aprenentatge
+        dels nostres alumnes.</p>
+      <h2><a name="2a"></a>Aula 2.2 (2n BAT A)</h2>
+      <button type="button" onclick="document.getElementById('demo').style.display='block'">Més infromació</button>
+      <button type="button" onclick="document.getElementById('demo').style.display='none'">Menys informació</button>
+
+      <div id="demo" style="display:none">
+
+        <p>En aquesta classe és a on els alumnes de 2n de Batxiller A reben majoritàriment les seves classes. La seva
+          modalitat és la social/humanística.</p>
+        <img id="demo" src="img/IMG_9132.jpg" style="width:100%"></p>
+      </div>
+
+
+
+    </div>
+
+    <div>
+      <h2><a name="2b"></a>Aula Audiovisuals (2n BAT B)</h2>
+
+      <button type="button" onclick="document.getElementById('demo1').style.display='block'">Més infromació</button>
+      <button type="button" onclick="document.getElementById('demo1').style.display='none'">Menys informació</button>
+
+      <div id="demo1" style="display:none">
+
+        <p>Els alumnes de 2n de Batxiller B, que fan la modalitat social/humanística, cada dematí s'han de traslladar
+          fins aquesta classe.</p>
+        <img id="demo1" src="img/IMG_9133.jpg" style="width:100%"></p>
+      </div>
+
+
+    </div>
+
+
+    <div>
+      <h2><a name="2c"></a>Aula de química (2n BAT C)</h2>
+
+      <button type="button" onclick="document.getElementById('demo2').style.display='block'">Més infromació</button>
+      <button type="button" onclick="document.getElementById('demo2').style.display='none'">Menys informació</button>
+
+      <div id="demo2" style="display:none">
+
+        <p>Els científics de la salut i alumnes de 2n de batxillerat C es situen a l'aula de química.</p>
+        <img id="demo2" src="img/IMG_9129.jpg" style="width:100%"></p>
+      </div>
+
+
+    </div>
+
+
+    <div>
+      <h2><a name="2d"></a>Laboratori de física (2n BAT D)</h2>
+
+      <button type="button" onclick="document.getElementById('demo3').style.display='block'">Més infromació</button>
+      <button type="button" onclick="document.getElementById('demo3').style.display='none'">Menys informació</button>
+
+      <div id="demo3" style="display:none">
+
+        <p>El laboratori de física queda reservat pels alumnes de 2n de batxillerat D, els quals duen a terme una
+          modalitat cientificotecnologica.</p>
+        <img id="demo3" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+      </div>
+
+
+
+    </div>
+
+    <div>
+      <h2><a name="labq"></a>Laboratori de química</h2>
+
+      <button type="button" onclick="document.getElementById('demo4').style.display='block'">Més infromació</button>
+      <button type="button" onclick="document.getElementById('demo4').style.display='none'">Menys informació</button>
+
+      <div id="demo4" style="display:none">
+
+        <p>Una de les aules didàctiques d'aquest pis és el laboratori de química, allà on es duen a terme reaccions,
+          dissolucions i moltes altres proves.</p>
+        <img id="demo4" src="img/IMG_9130.jpg" style="width:100%"></p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="right">
+    <h2><a name="elrellotge"></a>El rellotge</h2>
+    <p>El primer que et trobes en arribar a aquest pis és un preciós rellotge orientat cap al carrer. Aquesta
+      construcció és remarcable a causa de la seva estètica encara que tot l'edifici (construit a principis del segle
+      XX) segueix el mateix cànon de bellesa.</p>
+    <img src="img/IMG_9131.jpg" style="width:100%">
+
+    <h2><a name="aules"></a>Aules de desdoblament</h2>
+    <p>La darrera qüestió a mencionar d'aquest pis és la quantitat d'aules (secundàries) que s'empren per a fer
+      desdoblament i que els nostres alumnes aprenguin millor o per rebre classes de certes assignatures optatives.</p>
+    <img src="img/IMG_9134.jpg" style="width:100%">
+
+  </div>
+
+
+
+
+
+
+
+
+  <div id="peu"> <a href="http://www.iesramonllull.net/">www.iesramonllull.net</a></div>
+
+</body>
+
+</html>

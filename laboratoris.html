@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      background-color: lightblue;
+      float: left;
+      width: 100%;
+    }
+
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .right {
+      background-color: lightblue;
+      float: left;
+      width: 100%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    .laboratori {
+      width: 33%;
+      float: left;
+      padding: 10px;
+      border-right: 1px dotted gray;
+    }
+
+    img,
+    iframe {
+      width: 80%;
+      margin: auto;
+      display: block;
+      margin-top: 20px;
+    }
+
+    @media only screen and (max-width:800px) {
+
+      /* For tablets: */
+      .main {
+        width: 100%;
+        padding: 0;
+      }
+
+      .right {
+        width: 100%;
+      }
+
+      .laboratori {
+        width: 100%;
+        float: left;
+        padding: 10px;
+        border-right: 1px dotted gray;
+      }
+
+    }
+
+    @media only screen and (max-width:500px) {
+
+      /* For mobile phones: */
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>IES RAMON LLULL</h1>
+    <h2 style="text-align: center;">LABORATORIS</h2>
+  </header>
+
+  <div style="text-align: center;">
+    <p>El centre disposa de 3 laboratoris</p>
+    <p>Tots els laboratoris estan equipats amb projectors i pissarres.</p>
+  </div>
+
+  <div class="main">
+    <div class="laboratori">
+      <h2 id="fisica">Laboratori de <strong>Física</strong> 🪐</h2>
+      <p>El laboratori de física es localitza en la segona planta de l'institut. És una aula molt ample amb molta
+        capacitat d'alumnes.
+        En aquesta aula ja no s'utilitza per fer pràctiques, per COVID i s'utilitza enguany per classes normals; però
+        abans, sí que es feien experiments en aquesta aula
+        amb el material proporcionat per l'institut.
+      </p>
+
+      <img src="img/imagenlabdefisica2.jpg">
+
+
+      <iframe width="80%" src="https://www.youtube.com/embed/CtLWfG6kNoI" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </div>
+    <div class="laboratori">
+      <h2 id="quimica">Laboratori de <strong>Química</strong> 🧪</h2>
+      <p>El laboratori de Química es troba en la segona planta de l'institut.
+        A més de ser un laboratori, és també el departament de física i química i una aula d'imatge i expressió. </p>
+    </div>
+    <div class="laboratori">
+      <h2 id="biologia">Laboratori de <strong>Biología</strong> 🧬</h2>
+      <p>El laboratori de Biología es situa en la segona planta de l'institut, prop del museu de ciències. El
+        laboratori està equipat amb tot el material necessari per fer
+        pràctiques biològiques. A més, també es fan les classes de Geologia en aquesta aula, això permet les
+        pràctiques
+        geològiques.
+        Hi ha material suficient per fer practiques biològiques i geològiques. </p>
+      <img src="img/laboratorio de biologia 1.jpg" style="width:80%">
+      <img src="img/laboratoriodebio2.jpg" style="width:80%">
+      <iframe width="80%" src="https://www.youtube.com/embed/VJ9uCJj9A5A" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <div class="right">
+    <h3>MATERIAL PER EXPERIMENTS?</h3>
+    <p>
+    <p id="demo" style="display:none">Els laboratoris estan equipades amb tot el material necessari per fer pràctiques
+      durant les respectives assignatures. A més, estan disponibles diversos
+      instruments antics que s'utilitzaven per a fer experiments.</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Pitja aqui</button>
+
+
+    </p>
+    <h2>!!!</h2>
+    <p> Només es pot accedir a aquestes aules quan es fan classes de les respectives assignatures.</p>
+    <h3>MESURES QUE S'HAN DE COMPLIR EN ELS LABORATORIS</h3>
+    <ul>
+      <li>No es permet menjar, beure ni fumar</li>
+      <li>No s'han de bloquejar les portes</li>
+      <li>Espais ordenats i nets</li>
+      <li>Netejar-se les mans <b>SEMPRE</b></li>
+      <li>Vestimenta apropiada i cabells recollits</li>
+    </ul>
+    <a href="javascript:(function(){alert('Treballa amb molt de cuidat en els laboratoris!')})()">CLICK AQUI</a>
+    </p>
+    <h3>INSTRUMENTS DISPONIBLES EN ELS LABORATORIS DE BIOLOGÍA</h3>
+    <ul>Els instruments disponibles en els laboratoris son:
+      <li>Microscopi òptic</li>
+      <img src="https://cdn.goconqr.com/uploads/media/image/11031078/desktop_42f42c61-ca26-4837-9c94-6259d80e1bda.jpg"
+        style="width:60%">
+      <li>Lupa binocular</li>
+      <img src="https://www.amaina.com/1573-large_default/lupa-binocular-euromex-novex-ap-8-20-40-aumentos.jpg"
+        style="width:60%">
+    </ul>
+    <div style="text-align: center; background-color: lightblue; font-size: 12px;">
+      <a href="http://www.iesramonllull.net/"> Pàgina web oficial de l'institut </a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+    Web dissenyat per Kayla
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color:#FFD640;padding:15px;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#FFD640;padding:15px;">
+  <h1>Institut Ramon Llull</h1>
+
+  <h3><u><b>Cafeteria</b></u></h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"></div>
+    <a href="#cafe">Cafeteria</a>
+   </div>
+
+<div class="main">
+    <h2 id="#cafe">Cafeteria</h2>
+    <p>Aquesta és la cafeteria de l'Institut de Ramon Llull, es espaiosa i compta amb una sala de professors.</p>
+    <img src="img/cafe.jpg" style="width:100%">
+    <img src="img/comedor.jpg" style="width:100%">
+    
+   
+</div>
+
+<div class="right">
+    <h2>¿Que puc menjar?</h2>
+    <p>Pots comprar tota mena de menjar, n'hi ha de tot.</p>
+    <p>Hi ha pizza, entrepans, pastes, gofres, llaminadures i altres coses més.
+Tot val al voltant de 2 euros com a màxim, aquesta força bo i adquisible</p>
+    <h2>Horaris</h2>
+    <p>La cafeteria obre a les vuit del matí i està oberta fins que acaben les classes, a les dues del migdia.</p>
+    <h2>La sala de professors</h2>
+    <p>Esta adevora de la cafeteria.</p>
+    <img src="img/sala profee.jpg" style="width:100%;">
+
+</div>
+
+</div>
+
+
+ <div style="background: color#FFC900;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>

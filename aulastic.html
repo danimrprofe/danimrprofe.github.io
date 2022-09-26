@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      float: left;
+      width: 100%;
+      background: #f1f1f1;
+    }
+
+    .menuitem {
+      padding: 8px;
+
+      border-bottom: 0.5px solid #cbffef;
+      background: #f1f1f1;
+    }
+
+    .main {
+      float: left;
+      width: 33%;
+      padding: 10px 20px;
+      overflow: hidden;
+      border-left: 1px dashed gray;
+    }
+
+    #aules {
+      background: lightyellow;
+      overflow: hidden;
+    }
+
+    .right {
+      background-color: lightcyan;
+      float: right;
+      width: 100%;
+      padding: 10px 15px;
+
+    }
+
+
+    p {
+      font-size: 14px;
+      line-height: 1.65em;
+    }
+
+    A:link {
+      text-decoration: none;
+      color: rgb(14, 13, 13)
+    }
+
+    A:visited {
+      color: rgb(35, 20, 241);
+      font-family: arial;
+      text-decoration: none
+    }
+
+    A:hover {
+      color: rgb(14, 50, 214);
+      font-family: arial;
+      text-decoration: none
+    }
+
+
+    @media only screen and (max-width:800px) {
+
+      /* For tablets: */
+      .main {
+        width: 100%;
+        padding-bottom: 500em;
+        margin-bottom: -500em;
+
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width:500px) {
+
+      /* For mobile phones: */
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+        padding-bottom: 500em;
+        margin-bottom: -500em;
+      }
+    }
+  </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+  <header>
+    <h1>IES RAMON LLULL</h1>
+    <h2 style="text-align: center;">AULES DE TIC</h2>
+    <h3><b> <i> <a href="http://www.iesramonllull.net/">
+            L'Ies Ramon Llull</a>, on es formen els millors informàtics!</i></b></h3>
+  </header>
+
+
+
+  <div id="aules">
+
+    <div class="main">
+      <h2 id="TIC">Aula d'informàtica</h2>
+      <p>Aula amb noves torres de NOX i netway, una aula de molt bona qualitat. Aquesta aula està preparada per l'estudi
+        del conjunt de totes les eines i programes que tracten, administren, transmeten i comparteixen la informació
+        mitjançant suports tecnològics.</p>
+      <img src="img/tic.jpg" style="width:100%">
+    </div>
+
+    <div class="main">
+      <h2 id="tecnologia">Aula de tecnologia industrial</h2>
+      <p>Aula especialitzada per planificar i dissenyar processos de manufactura i equip que és un aspecte principal de
+        la tecnologia industrial.</p>
+      <img src="img/Tecno 1.jpg" style="width:100%">
+    </div>
+
+    <div class="main">
+      <h2 id="fusta">Aula de fusta</h2>
+      <p>Aula especialitzada per el treball amb fusta i el seu estudi en la tecnologia.</p>
+      <img src="img/fusta.jpg" style="width:100%">
+    </div>
+
+  </div>
+
+  <div class="right">
+    <h2 style="color:#6f55e2">On estan situades?</h2>
+    <p id="demo" style="display:none">Estan situades al fons esquerra (orientats cap a l'entrada de l'institut) de la
+      planta baixa.</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Clica!</button>
+
+    <h2 style="color:#6f55e2">Quina és l'aforament?</h2>
+    <p id="dos" style="display:none">L'aforament màxim és de 30 persones.</p>
+    <button type="button" onclick="document.getElementById('dos').style.display='block'">Clica!</button>
+
+
+    <h2 style="color:#6f55e2">S'ha de pagar el material?</h2>
+    <p id="tres" style="display:none">És totalment gratuït!</p>
+    <button type="button" onclick="document.getElementById('tres').style.display='block'">Clica!</button>
+  </div>
+
+
+
+
+  <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> <a
+      href="http://www.iesramonllull.net/">
+      WEB OFICIAL DE L'IES RAMON LLULL</a></div>
+
+</body>
+
+</html>

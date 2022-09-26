@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      float: left;
+      width: 20%;
+      background-color: #476A6F
+    }
+
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #f1f1f1;
+      color: white;
+    }
+
+    .main {
+      float: left;
+      width: 80%;
+      padding: 20px;
+      overflow: hidden;
+
+    }
+
+    .right {
+      background-color: #C9E099;
+      float: left;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+
+    A:link {
+      text-decoration: none;
+      color: white
+    }
+
+    A:visited {
+      color: white;
+      font-family: arial;
+      text-decoration: none
+    }
+
+    A:hover {
+      color: black;
+      font-family: arial;
+      text-decoration: none
+    }
+
+    .menu {
+      width: 100%;
+    }
+
+    .menuitem {
+      float: left;
+      width: 33%
+    }
+
+
+    @media only screen and (max-width:800px) {
+
+      .menu {
+        width: 100%;
+      }
+
+      .menuitem {
+        float: left;
+        width: 50%
+      }
+
+      /* For tablets: */
+      .main {
+        width: 100%;
+
+      }
+
+      .right {
+        width: 100%;
+      }
+
+      @media only screen and (max-width:500px) {
+
+        .menu {
+          width: 100%;
+        }
+
+        .menuitem {
+
+          width: 100%
+        }
+
+        /* For tablets: */
+        .main {
+          width: 100%;
+
+        }
+
+        .right {
+          width: 100%;
+        }
+      }
+  </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+  <header>
+    <h1>IES RAMON LLULL</h1>
+    <h2 style="text-align: center;">PLANTA BAIXA</h2>
+  </header>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <div class="menuitem"><a href="index.html"> Inici</a></div>
+      <div class="menuitem"><a href="plantabaixa.html"> Planta Baixa</a></div>
+      <div class="menuitem"><a href="#">Departament d'orientació</a> </div>
+      <div class="menuitem"><a href="#">Secretaria</a> </div>
+      <div class="menuitem"><a href="#">Sala de professors</a> </div>
+      <div class="menuitem"><a href="#">Caporalia d'estudis</a> </div>
+      <div class="menuitem"><a href="#">Consergeria</a> </div>
+      <div class="menuitem"><a href="pati.html">Pati</a> </div>
+      <div class="menuitem"><a href="cafeteria.html">Cafeteria</a> </div>
+      <div class="menuitem"><a href="gimnas.html">Gimnàs</a> </div>
+      <div class="menuitem"><a href="#">Aula magna</a> </div>
+      <div class="menuitem"><a href="#">Aules de plàstica</a> </div>
+      <div class="menuitem"><a href="galeriafotos.html">Galeria d'imatges</a> </div>
+      <div class="menuitem"><a href="#coeducacio">Coeducació</a> </div>
+      <div class="menuitem"><a href="#Altres">Altres aules</a> </div>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize= '20px'">Aumenta la lletra!
+      </button>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize= '16px'"> Fes-la petita! </button>
+    </div>
+
+
+    <div class="main" id="demo">
+      <h2>...un llarg passadís</h2>
+      <p> En la planta baixa trobaràs les aules dels primers cursos de l'ESO. Si recorres el passadís principal per la
+        dreta, trobaràs els banys, l'Aula Magna i al final les aules de tecnologia. Per la dreta, al final del passadís
+        es troba la secretaria, els despatxos i la porta que dona a la plaça del tub.
+        <br><br> La planta baixa dona accés a les tres escales de l'edifici. La principal, just davant de l'entrada. La
+        dels professors, a la dreta de l'edifici. I finalment, la de l'esquerra, més petita que les altres dues.
+        <br><br> Durant el passadís podrem veure els cartells informatius de cada departament, anuncis d'esdeveniments
+        relacionats amb el centre i cartells de coeducació. A més, de tant en tant, l'institut munta uns projectes
+        perquè tots els alumnes aprenguin del tema, aquests projectes poden ser culturals o relacionats amb problemes
+        actuals.
+      </p>
+      <img src="img/pasillo.jpg" style="width:100%">
+      <h2 id="coeducacio">Coeducació al centre</h2>
+      <p>
+        L'institut té un departament que tracta d'educar als alumnes en coses paral·leles al clàssic aprenentatge
+        estudiantil. Aquest departament, anomenada de "coeducació" ensenya a partir de cartells, notícies o articles
+        certs valors que estan en alça en la societat. Alguns d'aquests valors són: integracionisme, el feminisme o el
+        respecte a les comunitats LGTBIQ+.
+        <br><br> Podem veure en l'imatge el tipus de cartells que el departament penja.
+      </p>
+      <img width="150%" src="img/coeduca1.jpg" alt="">
+      <h2 id="Altres">Altres aules</h2>
+      <p> A part de les aules de classes, en la planta baixa es troben classes com la de música o la de plàstica.
+        Aquestes aules estan al costat esquerre del passadís. L'aula de música, s'usa com a aula magna, en ella es fan
+        xerrades, exposicions i altres projectes.
+        També es troben els tallers de tecnologia i com em dit, l'aula de plàstica. Aquesta darrera es troba al cantó
+        del edifici i te finestres que donen a el carrer i a un jardí del Edifici de Sa Riera de la UIB.
+      </p>
+    </div>
+
+    <div class="right">
+
+      <h2>Vols visitar-nos?</h2>
+      <p>Trobaràs un institut ple de vida!</p>
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/7FqEABp_UCo?controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <h2>Com veurás...</h2>
+      <p>La Planta baixa dona vistes a l'Avenida Portugal, un carrer concorregut que envolta el centre de Palma.</p>
+    </div>
+  </div>
+
+
+  <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Web creada per
+    Luis Melgar.</div>
+
+</body>
+
+</html>

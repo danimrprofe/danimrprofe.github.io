@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      float: left;
+      width: 20%;
+    }
+
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #a3a3a3;
+    }
+
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .right {
+      background-color: lightblue;
+      float: left;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    @media only screen and (max-width:800px) {
+
+      /* For tablets: */
+      .main {
+        width: 80%;
+        padding: 0;
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width:500px) {
+
+      /* For mobile phones: */
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+  <div style="background-color: lightblue;padding:15px;">
+    <h1>Museu de ciències i gimnàs</h1>
+    <h3> <u> Coneix el Ramon Llull</u> </h3>
+  </div>
+
+  <div style="overflow:auto">
+
+
+    <div class="right">
+      <h2>Museu </h2>
+      <p> N´hi ha una gran varietat d'espècies disecades per a poder veure quan vulguis.
+        Està en la planta més alta del institut per val la pena anar al menys una vegada al any</p>
+      <img src="img/musculo.jpg" style="width:100%">
+      <h2>
+        on està ubicat el museu?</h2>
+      <p> està en la tercera planta, que disposa d'una gran varietat d'animals dissecats com per exemple l'ós marró.
+        Hauràs de pujar unes cuantes escaleres pero val la pena</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Ramonllull_1.JPG" style="width:100%">
+
+      <h2>I el gimnàs?</h2>
+      <p>En el pati, en la planta d'abaix. Apart n'hi ha uns vestuaris amb dutxes.</p>
+      <img src="https://www.caib.es/pidip2front/jsp/image?codi=/2016/9/6/2077810.jpg" style="width:100%">
+      <h2>Valoració</h2>
+      <p>El museu i el gimnàs són llocs magnífics en el que pots fer gran varietats de coses com per exemple en le museu
+        pots aprednre sobre animals prehistòrics, en el l'aula de gimnàs millores la teva condició física</p>
+    </div>
+  </div>
+
+
+  <div style="background-color:#ffff;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a
+    part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content
+    respond to the resizing.</div>
+
+</body>
+
+</html>
