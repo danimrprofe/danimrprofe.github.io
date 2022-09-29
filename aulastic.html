@@ -31,8 +31,32 @@
     }
 
     #aules {
-      background: lightyellow;
+      background: #f3eed9;
       overflow: hidden;
+    }
+
+    #aules h2 {
+      color: #657899
+    }
+
+    #materia {
+      background: rgb(230, 65, 65);
+      overflow: hidden;
+    }
+
+    #materia h2 {
+      color: #f3eed9;
+      font-size: 30px;
+
+    }
+
+    #materia h3 {
+      color: #ffe5dd;
+      font-style: italic;
+    }
+
+    #materia p {
+      color: white
     }
 
     .right {
@@ -64,6 +88,26 @@
       color: rgb(14, 50, 214);
       font-family: arial;
       text-decoration: none
+    }
+
+    h3 {
+      color: gray;
+      font-weight: 200;
+    }
+
+    h2 {
+      border-top: 2px dotted white;
+      padding-top: 10px
+    }
+
+    img {
+      max-width: 100%;
+      margin: auto;
+      display: block;
+    }
+
+    header {
+      background: #dff1ff
     }
 
 
@@ -100,11 +144,55 @@
 
   <header>
     <h1>IES RAMON LLULL</h1>
-    <h2 style="text-align: center;">AULES DE TIC</h2>
+    <h2 style="text-align: center;background-color: #8dace1;">Departament de tecnologia</h2>
     <h3><b> <i> <a href="http://www.iesramonllull.net/">
-            L'Ies Ramon Llull</a>, on es formen els millors informàtics!</i></b></h3>
+            L'Ies Ramon Llull</a>, on es formen els millors informàtics!</i></b>
+    </h3>
+
+    <p>Benvingut al web del departement de tecnologia de l'IES Ramon Llull. Aquí trobaràs
+      tota la informació del nostre departament. També podràs saber en quins projectes estam
+      treballant.
+    </p>
+    <p>Al departament de tecnologia actualment pots cursar:</p>
   </header>
 
+
+  <div id="materia">
+
+    <div class="main">
+      <h2 id="TIC">Tecnologia i enginyeria</h2>
+      <h3>1r de batxillerat</h3>
+      <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
+        tant a primer com a segon de batxillerat.</p>
+      <img src="img/tic.jpg" style="width:100%">
+    </div>
+    <div class="main">
+      <h2 id="TIC">Recursos digitals</h2>
+      <h3>1r d'ESO</h3>
+      <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
+        tant a primer com a segon de d'ESO.</p>
+      <img src="img/tic.jpg" style="width:100%">
+    </div>
+    <div class="main">
+      <h2 id="TIC">Programació i tractament de dades</h2>
+      <h3>1r de batxillerat</h3>
+      <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
+        tant a primer com a segon de batxillerat.</p>
+      <img src="img/pdc.jpeg">
+    </div>
+    <div class=" main">
+      <h2 id="TIC">Tecnologia i digitalització</h2>
+      <h3>2n i 3r d'ESO</h3>
+      <p>Es tracta d'una matèria <strong>troncal</strong> que es cursa
+        tant a segon com a tercer de d'ESO.</p>
+      <img src="img/tic.jpg" style="width:100%">
+    </div>
+    <div class="main">
+      <h2 id="TIC">TIC</h2>
+      <h3>4t d'ESO</h3>
+      <img src="img/tic.jpg" style="width:100%">
+    </div>
+  </div>
 
 
   <div id="aules">
