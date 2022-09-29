@@ -39,11 +39,14 @@
       padding: 14px;
     }
 
-    p {
+    p,
+    ul {
       font-size: 14px;
       line-height: 1.65em;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
+
+
 
     h2 {
       font-family: 'lato', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
