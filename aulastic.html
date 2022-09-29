@@ -44,6 +44,12 @@
       overflow: hidden;
     }
 
+    #continguts {
+      background: rgb(117, 224, 135);
+      overflow: hidden;
+      border: 1px solid green;
+    }
+
     #materia h2 {
       color: #f3eed9;
       font-size: 30px;
@@ -75,13 +81,21 @@
 
     A:link {
       text-decoration: none;
-      color: rgb(43, 129, 226);
+      color: rgb(255, 255, 255);
+      background: gray;
+      padding: 3px
+    }
+
+    A:visited {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
     }
 
 
 
+
     A:hover {
-      color: rgb(14, 50, 214);
+
 
       text-decoration: none
     }
@@ -89,6 +103,11 @@
     h3 {
       color: gray;
       font-weight: 200;
+    }
+
+    h1 {
+      color: white;
+
     }
 
     h2 {
@@ -103,7 +122,19 @@
     }
 
     header {
-      background: #dff1ff
+      text-align: center;
+      background: #8dace1;
+
+
+    }
+
+    .apartat {
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+      width: 100%;
+      background-color: #657899;
+      color: whitesmoke;
     }
 
 
@@ -146,48 +177,114 @@
 
   <header>
     <h1>Departament de tecnologia</h1>
-    <h2 style="text-align: center;background-color: #8dace1;">IES RAMON LLULL</h2>
+    <h2>IES RAMON LLULL</h2>
     <p id="callout">
-      L'Ies Ramon Llull, on es formen els millors informàtics i enginyers!
+      On es formen els millors informàtics i enginyers!
     </p>
     <img src="img/caminante.jpg" alt="">
-    <p>Benvingut al web del departement de tecnologia de l'IES Ramon Llull. Aquí trobaràs
+
+    <p>Benvingut al web del departament de tecnologia de l'IES Ramon Llull. Aquí trobaràs
       tota la informació del nostre departament. També podràs saber en quins projectes estam
       treballant.
     </p>
-    <p>Al departament de tecnologia actualment pots cursar diferents matèries.</p>
-
-    <p>Entre molts de projectes, treballam amb:</p>
-    <ul>
-      <li>Arduino</li>
-      <li>Lego NXT</li>
-    </ul>
-    <p>Quant a disseny gràfic:</p>
-    <ul>
-      <li><a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmePegCAJeHIu-hPHidurRyu4">Inkscape</a></li>
-      <li>Gimp</li>
-      <li>Tinkercad</li>
-      <li><a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmePRkD5EVKFyf29dzmeuTKBJ">Blender</a></li>
-    </ul>
-    <p>Feim audiovisuals:</p>
-    <ul>
-      <li>Podcasts</li>
-      <li>Cine</li>
-      <li>Tallers de fotografia</li>
-      <li>Edició de video, streaming i videoconferència</li>
-    </ul>
-    <p>També dissenyam videojocs amb</p>
-    <ul>
-      <li>Unity</li>
-      <li>App inventor</li>
-    </ul>
-    <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
-      </a>
-    </p>
-
   </header>
 
+  <div class="apartat">CONTINGUTS</div>
+  <div id="continguts">
+    <div class="main">
+      <h2 id="TIC">Robòtica</h2>
+      <h3>Lego i electrònica</h3>
+      <p>Quant a disseny gràfic:</p>
+      <p>Entre molts de projectes, treballam amb:</p>
+      <ul>
+        <li>Arduino</li>
+        <li>Lego NXT</li>
+      </ul>
+      <img src="img/lego.jpg" alt="">
+    </div>
+    <div class="main">
+      <h2 id="TIC">Disseny gràfic</h2>
+      <h3>retoc fotogràfic i disseny vectorial</h3>
+      <p>Quant a disseny gràfic:</p>
 
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmePegCAJeHIu-hPHidurRyu4">Inkscape</a></li>
+        <li>Gimp</li>
+        <li>Tinkercad</li>
+        <li><a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmePRkD5EVKFyf29dzmeuTKBJ">Blender</a></li>
+
+      </ul>
+      <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
+        </a>
+      </p>
+    </div>
+    <div class="main">
+      <h2 id="TIC">Audivisuals</h2>
+      <h3>So i video digital</h3>
+      <p>Feim audiovisuals:</p>
+      <ul>
+        <li>Cream i gravam <a href="podcast.html">Podcasts</a> amb <strong>Audacity</strong></li>
+        <li>Cream i dirigim petits curtmetratges de cine amb OpenShot</li>
+        <li>Tallers de fotografia</li>
+        <li>Edició de video, streaming amb OBS i videoconferència</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2 id="TIC">Videojocs</h2>
+      <h3>Programació orientada a jocs</h3>
+      <p>També dissenyam videojocs amb</p>
+      <ul>
+        <li><strong>Unity</strong> per a fer jocs 2D i 3D multiplataforma</li>
+        <li>App inventor per a crear aplicacions per a dispositius mòbils</li>
+      </ul>
+      <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
+        </a>
+      </p>
+    </div>
+    <div class="main">
+      <h2 id="TIC">Programació</h2>
+      <h3>Programació modular i estructurada</h3>
+      <p>Cream programes utilitzant distints llenguatges de programació</p>
+      <ul>
+        <li>Introducció al pensament computacional</li>
+        <li>Programació per blocs (scratch)</li>
+        <li>Programació estructurada amb Python</li>
+
+      </ul>
+
+    </div>
+    <div class="main">
+      <h2 id="TIC">Disseny web</h2>
+      <h3>Programació</h3>
+      <p>Cream programes utilitzant distints llenguatges de programació</p>
+      <ul>
+        <li>Aprenem a dissenyar i proramar pàgines web amb els llenguatges<strong> HTML, CSS i Javascript</strong>, per
+          tal de fer llocs
+          webs
+          dinàmics i adaptables als diferents dispositius
+        </li>
+        <li><strong>Github </strong>ens permet guardar al núvol els nostres projectes, així com a col·laborar amb altres
+          programadors i
+          dur un
+          control de les versions dels nostres projectes
+        </li>
+        <li>Aprendrem a utilitzar entorns IDE, com ara <strong>Visual Studio Code</strong> per a programar de forma més
+          eficient
+
+        </li>
+        <li>Com a darrer pas, aprenem a <strong>publicar</strong> la nostra web a Internet per tal de que es pugui veure
+          des de tot el
+          món.
+        </li>
+
+      </ul>
+      <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="apartat">MATÈRIES</div>
 
   <div id="materia">
 
@@ -226,12 +323,14 @@
     </div>
   </div>
 
+  <div class="apartat">ESPAIS</div>
 
   <div id="aules">
 
     <div class="main">
       <h2 id="TIC">Aula d'informàtica</h2>
-      <p>Aula amb noves torres de NOX i netway, una aula de molt bona qualitat. Aquesta aula està preparada per l'estudi
+      <p>Aula amb noves torres de NOX i netway, una aula de molt bona qualitat. Aquesta aula està preparada per
+        l'estudi
         del conjunt de totes les eines i programes que tracten, administren, transmeten i comparteixen la informació
         mitjançant suports tecnològics.</p>
       <img src="img/tic.jpg" style="width:100%">
@@ -239,7 +338,8 @@
 
     <div class="main">
       <h2 id="tecnologia">Aula de tecnologia industrial</h2>
-      <p>Aula especialitzada per planificar i dissenyar processos de manufactura i equip que és un aspecte principal de
+      <p>Aula especialitzada per planificar i dissenyar processos de manufactura i equip que és un aspecte principal
+        de
         la tecnologia industrial.</p>
       <img src="img/Tecno 1.jpg" style="width:100%">
     </div>
