@@ -2,8 +2,14 @@
 <html>
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/estilos.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <style>
     * {
       box-sizing: border-box;
@@ -74,10 +80,7 @@
     }
 
 
-    p {
-      font-size: 14px;
-      line-height: 1.65em;
-    }
+
 
     A:link {
       text-decoration: none;
@@ -100,20 +103,9 @@
       text-decoration: none
     }
 
-    h3 {
-      color: gray;
-      font-weight: 200;
-    }
 
-    h1 {
-      color: white;
 
-    }
 
-    h2 {
-      border-top: 2px dotted white;
-      padding-top: 10px
-    }
 
     img {
       max-width: 100%;
@@ -178,12 +170,12 @@
   <header>
     <h1>Departament de tecnologia</h1>
     <h2>IES RAMON LLULL</h2>
-    <p id="callout">
+    <div class="alert alert-light" role="alert">
       On es formen els millors informàtics i enginyers!
-    </p>
-    <img src="img/caminante.jpg" alt="">
+    </div>
+    <img class="img-fluid" src="img/caminante.jpg" alt="">
 
-    <p>Benvingut al web del departament de tecnologia de l'IES Ramon Llull. Aquí trobaràs
+    <p class="lead">Benvingut al web del departament de tecnologia de l'IES Ramon Llull. Aquí trobaràs
       tota la informació del nostre departament. També podràs saber en quins projectes estam
       treballant.
     </p>
@@ -200,6 +192,10 @@
         <li>Arduino</li>
         <li>Lego NXT</li>
       </ul>
+      <p>
+        Els Arduino són petites plaques de control que podem connectar a altres components
+        electrònics, així com programar-la per a que segueixi una sèrie d'instruccions.
+      </p>
       <img src="img/lego.jpg" alt="">
     </div>
     <div class="main">
