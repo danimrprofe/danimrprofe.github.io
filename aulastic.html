@@ -10,185 +10,44 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
-    .menu {
-      float: left;
-      width: 100%;
-      background: #f1f1f1;
-    }
-
-    .menuitem {
-      padding: 8px;
-
-      border-bottom: 0.5px solid #cbffef;
-      background: #f1f1f1;
-    }
-
-    .main {
-      float: left;
-      width: 33%;
-      padding: 10px 20px;
-      overflow: hidden;
-      border-left: 1px dashed gray;
-    }
-
-    #aules {
-      background: #f3eed9;
-      overflow: hidden;
-    }
-
-    #aules h2 {
-      color: #657899
-    }
-
-    #materia {
-      background: rgb(230, 65, 65);
-      overflow: hidden;
-    }
-
-    #continguts {
-      background: rgb(117, 224, 135);
-      overflow: hidden;
-      border: 1px solid green;
-    }
-
-    #materia h2 {
-      color: #f3eed9;
-      font-size: 30px;
-
-    }
-
-    #materia h3 {
-      color: #ffe5dd;
-      font-style: italic;
-    }
-
-    #materia p {
-      color: white
-    }
-
-    .right {
-      background-color: lightcyan;
-      float: right;
-      width: 100%;
-      padding: 10px 15px;
-
-    }
-
-
-
-
-    A:link {
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      background: gray;
-      padding: 3px
-    }
-
-    A:visited {
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-    }
-
-
-
-
-    A:hover {
-
-
-      text-decoration: none
-    }
-
-
-
-
-
-    img {
-      max-width: 100%;
-      margin: auto;
-      display: block;
-    }
-
-    header {
-      text-align: center;
-      background: #8dace1;
-
-
-    }
-
-    .apartat {
-      text-align: center;
-      padding: 20px;
-      font-size: 40px;
-      width: 100%;
-      background-color: #657899;
-      color: whitesmoke;
-    }
-
-
-    @media only screen and (max-width:800px) {
-
-      /* For tablets: */
-      .main {
-        width: 100%;
-        padding-bottom: 500em;
-        margin-bottom: -500em;
-
-      }
-
-      .right {
-        width: 100%;
-      }
-    }
-
-    @media only screen and (max-width:500px) {
-
-      /* For mobile phones: */
-      .menu,
-      .main,
-      .right {
-        width: 100%;
-        padding-bottom: 500em;
-        margin-bottom: -500em;
-      }
-    }
-
-    #callout {
-      padding: 10px;
-      background-color: gray;
-      color: white;
-    }
-  </style>
 </head>
 
 <body style="font-family:Verdana;">
 
-  <div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-android"
-        viewBox="0 0 16 16">
-        <path
-          d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.94 8.94 0 0 1 8 5a8.94 8.94 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
-      </svg>
-      <h1 class="display-5 fw-bold">Departament de tecnologia</h1>
-      <p class="col-md-8 fs-4">IES RAMON LLULL</p>
 
+  <div id="intro" class="bg-image shadow-2-strong ">
+    <div class="mask p-5 blue-gradient" style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="text-white">
+          <figure class="text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-android"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.94 8.94 0 0 1 8 5a8.94 8.94 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+            </svg>
+            <h1 class="display-5 fw-bold">Departament de tecnologia</h1>
+            <p class="col-md-8 fs-4">IES RAMON LLULL</p>
+            <figcaption class="blockquote-footer">
+              On es formen els millors <cite title="Source Title">informàtics i enginyers!</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="alert alert-light" role="alert">
-      On es formen els millors informàtics i enginyers!
-    </div>
-  </div>
 
-  <div class="container">
+
+
+
+  <div class="container py-2">
     <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Hola!</h4>
+      <h3 class="alert-heading"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+        </svg></h3>
       <p>Benvingut al web del departament de tecnologia de l'IES Ramon Llull. Aquí trobaràs
         tota la informació del nostre departament. També podràs saber en quins projectes estam
         treballant.</p>
@@ -196,27 +55,31 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-secondary">
-    <div class="row bg-dark p-2 text-dark bg-opacity-10">
-      <div class="col-sm-6 border bg-light p-2 text-dark ">
+  <div class="container">
+    <div class="row my-3">
+      <div class="col-sm-12  bg-light p-5 border ">
 
-        <h2 id=" TIC">Robòtica</h2>
-        <h3>Lego i electrònica</h3>
-        <p>Quant a disseny gràfic:</p>
-        <p>Entre molts de projectes, treballam amb:</p>
+        <h2 class="rounded bg-primary text-white my-3 p-3">Robòtica</h2>
+
+        <p>Entre molts de projectes, treballam amb diferents sistemes:</p>
         <ul>
-          <li>Arduino</li>
-          <li>Lego NXT</li>
+          <li>Amb Arduino treballem a nivell electrònic connectant components com a sensors, LEDS i actuadors</li>
+          <li>Els kits <mark>Lego NXT</mark> ens permeten crear i programar robots basats en els blocs de construcció de
+            LEGO</li>
         </ul>
         <p>
           Els Arduino són petites plaques de control que podem connectar a altres components
           electrònics, així com programar-la per a que segueixi una sèrie d'instruccions.
         </p>
-        <img src="img/lego.jpg" alt="">
-      </div>
 
-      <div class="col-sm-6 border bg-light p-2 text-dark ">
-        <h2>Disseny gràfic</h2>
+        <img class="rounded img-fluid img-thumbnail mx-auto d-block" src="img/lego.jpg" alt="">
+
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-12  bg-light p-5 border ">
+        <h2 class="rounded bg-primary text-white my-3 p-3">Disseny gràfic</h2>
         <h3>retoc fotogràfic i disseny vectorial</h3>
         <p>Quant a disseny gràfic:</p>
 
@@ -231,50 +94,58 @@
           </a>
         </p>
       </div>
-      <div class="row bg-dark p-2 text-dark bg-opacity-10">
-        <div class="col-sm-6 border bg-light p-2 text-dark ">
-          <h2>Audivisuals</h2>
-          <h3>So i video digital</h3>
-          <p>Feim audiovisuals:</p>
-          <ul>
-            <li>Cream i gravam <a href="podcast.html">Podcasts</a> amb <strong>Audacity</strong></li>
-            <li>Cream i dirigim petits curtmetratges de cine amb OpenShot</li>
-            <li>Tallers de fotografia</li>
-            <li>Edició de video, streaming amb OBS i videoconferència</li>
-          </ul>
-        </div>
-        <div class="col-sm-6 border bg-light p-2 text-dark ">
-          <h2 id="TIC">Videojocs</h2>
-          <h3>Programació orientada a jocs</h3>
-          <p>També dissenyam videojocs amb</p>
-          <ul>
-            <li><strong>Unity</strong> per a fer jocs 2D i 3D multiplataforma</li>
-            <li>App inventor per a crear aplicacions per a dispositius mòbils</li>
-          </ul>
-          <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
-            </a>
-          </p>
-        </div>
+    </div>
+
+
+    <div class="row my-5">
+      <div class="col-sm-12  bg-light p-5 border ">
+        <h2 class="rounded bg-primary text-white my-3 p-3">Audivisuals</h2>
+        <h3>So i video digital</h3>
+        <p>Feim audiovisuals:</p>
+        <ul>
+          <li>Cream i gravam <a href="podcast.html">Podcasts</a> amb <strong>Audacity</strong></li>
+          <li>Cream i dirigim petits curtmetratges de cine amb OpenShot</li>
+          <li>Tallers de fotografia</li>
+          <li>Edició de video, streaming amb OBS i videoconferència</li>
+        </ul>
       </div>
-      <div class="row bg-dark p-2 text-dark bg-opacity-10">
-        <div class="col-sm-6 border bg-light p-2 text-dark ">
-          <h2>Programació</h2>
-          <h3>Programació modular i estructurada</h3>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12  bg-light p-5 border ">
+        <h2 class="rounded bg-primary text-white my-3 p-3">Videojocs</h2>
+        <h3>Programació orientada a jocs</h3>
+        <p>També dissenyam videojocs amb</p>
+        <ul>
+          <li><strong>Unity</strong> per a fer jocs 2D i 3D multiplataforma</li>
+          <li>App inventor per a crear aplicacions per a dispositius mòbils</li>
+        </ul>
+        <p>i una <a href="https://www.youtube.com/playlist?list=PLs4HvJtsfmeODll-f3rrcZ7z_laPhPNzX">Impressora 3d!
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-12  bg-light p-5 border ">
+        <h2 class="rounded bg-primary text-white my-3 p-3">Programació</h2>
+        <h3>Programació modular i estructurada</h3>
+        <p>Cream programes utilitzant distints llenguatges de programació</p>
+        <ul>
+          <li>Introducció al pensament computacional</li>
+          <li>Programació per blocs (scratch)</li>
+          <li>Programació estructurada amb Python</li>
+
+        </ul>
+
+      </div>
+      <div class="row my-5">
+        <div class="col-sm-12  bg-light p-5 border ">
+          <h2 class="rounded bg-primary text-white my-3 p-3">Disseny web</h2>
+
           <p>Cream programes utilitzant distints llenguatges de programació</p>
           <ul>
-            <li>Introducció al pensament computacional</li>
-            <li>Programació per blocs (scratch)</li>
-            <li>Programació estructurada amb Python</li>
-
-          </ul>
-
-        </div>
-        <div class="col-sm-6 border bg-light p-2 text-dark ">
-          <h2 id="TIC">Disseny web</h2>
-          <h3>Programació</h3>
-          <p>Cream programes utilitzant distints llenguatges de programació</p>
-          <ul>
-            <li>Aprenem a dissenyar i proramar pàgines web amb els llenguatges<strong> HTML, CSS i Javascript</strong>,
+            <li>Aprenem a dissenyar i proramar pàgines web amb els llenguatges<strong> HTML, CSS i
+                Javascript</strong>,
               per
               tal de fer llocs
               webs
@@ -286,7 +157,8 @@
               dur un
               control de les versions dels nostres projectes
             </li>
-            <li>Aprendrem a utilitzar entorns IDE, com ara <strong>Visual Studio Code</strong> per a programar de forma
+            <li>Aprendrem a utilitzar entorns IDE, com ara <strong>Visual Studio Code</strong> per a programar de
+              forma
               més
               eficient
 
