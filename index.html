@@ -3,56 +3,86 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Institut IES Ramon Llull</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="personalitzacio.css">
 
 </head>
 
-<body style="font-family: Verdana">
-  <header>
-    <h1 class="display-3">INSTITUT RAMON LLULL</h1>
-    <h2 style="text-align: center;">Benvingut!</h2>
-    <div style="margin: 15px 0">
-      <p>Coneix el nostre institut. Aquest lloc web ha estat creat pels alumnes
-        de TIC de 2n de batxillerat del curs 2021-2022.</p>
+<body>
 
-      <p>Navega per les diferents plantes per a conèixer tots els seus espais</p>
+  <div id="capsalera" class=" p-5 bg-primary text-white">
+    <h1 class="fw-bolder"><a class="text-reset text-decoration-none" href="index.html"> IES RAMON LLULL</a></h1>
+    <h2>Benvingut!</h2>
+  </div>
+
+  <img alt="ies ramon llull palma" src="img/entrada.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
+
+
+  <nav id="navegacio" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menú</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="plantabaixa.html"> Planta Baixa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Departament d'orientació</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Secretaria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sala de professors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Caporalia d'estudis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Consergeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pati.html">Pati</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="gimnas.html">Gimnàs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Aula magna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Aules de plàstica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="galeriafotos.html">Galeria d'imatges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#coeducacio">Coeducació</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Altres">Altres aules</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-
-
-    <img class="img-fluid" alt="ies ramon llull palma" src="img/entrada.jpg" style="width:100%" />
-  </header>
-
-  <nav>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Inici</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="plantabaixa.html">Planta baixa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="primeraplanta.html">Primer pis</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="segonpis.html">Segon pis</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="tecno.html">Espais tecnologia</a>
-      </li>
-
-    </ul>
   </nav>
 
-  <main>
-    <article>
+  <div class="container mt-4">
 
-      <section></section>
-    </article>
-  </main>
+    <p class="p-3 rounded bg-primary text-white">Coneix el nostre institut. Aquest lloc web ha estat creat pels alumnes
+      de TIC de 2n de batxillerat del curs 2021-2022.</p>
 
-  <aside>
+    <p>Navega per les diferents plantes per a conèixer tots els seus espais</p>
+
     <h2>Parts</h2>
     <p>L'edifici, a més de l'institut pròpiament dit, conté:</p>
     <ul>
@@ -70,10 +100,8 @@
       <li>Dos Cicles Formatius de Grau Superior (Animació Sociocultural i Integració Social)</li>
       <li>Formació Professional Bàsica (Títol Professional Bàsic en Informàtica d'Oficina)</li>
     </ul>
+  </div>
 
-  </aside>
-
-  <footer>Web diseñada por Daniel Moreno</footer>
 </body>
 
 </html>
