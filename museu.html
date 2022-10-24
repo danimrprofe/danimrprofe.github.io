@@ -3,101 +3,49 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    .menu {
-      float: left;
-      width: 20%;
-    }
-
-    .menuitem {
-      padding: 8px;
-      margin-top: 7px;
-      border-bottom: 1px solid #a3a3a3;
-    }
-
-    .main {
-      float: left;
-      width: 60%;
-      padding: 0 20px;
-      overflow: hidden;
-    }
-
-    .right {
-      background-color: lightblue;
-      float: left;
-      width: 20%;
-      padding: 10px 15px;
-      margin-top: 7px;
-    }
-
-    @media only screen and (max-width:800px) {
-
-      /* For tablets: */
-      .main {
-        width: 80%;
-        padding: 0;
-      }
-
-      .right {
-        width: 100%;
-      }
-    }
-
-    @media only screen and (max-width:500px) {
-
-      /* For mobile phones: */
-      .menu,
-      .main,
-      .right {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
-<body style="font-family:Verdana;">
+<body>
 
-  <div style="background-color: lightblue;padding:15px;">
-    <h1>Museu de ciències i gimnàs</h1>
-    <h3> <u> Coneix el Ramon Llull</u> </h3>
+  <div class=" p-5 bg-primary text-white">
+    <h1>IES RAMON LLULL</h1>
+    <h2>MUSEU DE CIÈNCIES</h2>
   </div>
 
-  <div style="overflow:auto">
-
-
-    <div class="main">
-      <h2 id="Museu"> <i> Museu</i> </h2>
-      <p> N´hi ha una gran varietat d'espècies disecades per a poder veure quan vulguis. Està en la planta més alta del
-        institut per val la pena anar al menys una vegada al any.
-      </p>
-      <p>
-        Hi ha moltíssimes espècies com ara el falcó, l'ós
-        marró, el pingüí imperial i per últim i no menys important el mandrós.</p>
-      <img src="img/museotop.jpg" style="width:100%">
-      <img src="img/imagen3.jpg" style="width:100%">
-
-    </div>
-
-
-
-    <div class="right">
-      <h2>Museu </h2>
-      <p> N´hi ha una gran varietat d'espècies disecades per a poder veure quan vulguis.
-        Està en la planta més alta del institut per val la pena anar al menys una vegada al any</p>
-      <img src="img/musculo.jpg" style="width:100%">
-      <h2>
-        on està ubicat el museu?</h2>
-      <p> està en la tercera planta, que disposa d'una gran varietat d'animals dissecats com per exemple l'ós marró.
-        Hauràs de pujar unes cuantes escaleres pero val la pena</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Ramonllull_1.JPG" style="width:100%">
-
-
-    </div>
+  <div class="container mt-4">
+    <h2 id="Museu"> <i> Museu</i> </h2>
+    <p> N´hi ha una gran varietat d'espècies disecades per a poder veure quan vulguis. Està en la planta més alta del
+      institut per val la pena anar al menys una vegada al any.
+    </p>
+    <p>
+      Hi ha moltíssimes espècies com ara el falcó, l'ós
+      marró, el pingüí imperial i per últim i no menys important el mandrós.</p>
+    <img src="img/museotop.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
+    <img src="img/imagen3.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
   </div>
+
+  <div class="container mt-4">
+    <h2>Museu </h2>
+    <p> N´hi ha una gran varietat d'espècies disecades per a poder veure quan vulguis.
+      Està en la planta més alta del institut per val la pena anar al menys una vegada al any</p>
+    <img src="img/musculo.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
+    <h2>
+      on està ubicat el museu?</h2>
+    <p> El pots trobar a la tercera planta, i disposa d'una gran varietat d'animals dissecats com per exemple l'ós
+      marró.
+      Hauràs de pujar unes cuantes escaleres pero val la pena</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Ramonllull_1.JPG"
+      class="my-3 rounded img-fluid mx-auto d-block" alt="">
+
+
+  </div>
+
 
 
 

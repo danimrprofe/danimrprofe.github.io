@@ -6,67 +6,21 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/estilos.css" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    .menu {
-      float: left;
-      width: 20%;
-    }
 
-    .menuitem {
-      padding: 8px;
-      background-color: #c2daebab;
-      min-width: 200px;
-    }
-
-    .main {
-      float: left;
-      width: 60%;
-      padding: 0 20px;
-      overflow: hidden;
-    }
-
-    .right {
-      background-color: #c2daebab;
-      float: right;
-      width: 20%;
-      padding: 10px 15px;
-      margin-top: 7px;
-    }
-
-    img {
-      max-width: 500PX;
-    }
-
-    @media only screen and (max-width:800px) {
-
-      .menu {
-        width: 100%;
-      }
-
-      /* For tablets: */
-      .main {
-        width: 100%;
-
-      }
-
-      .right {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
 
-<body style="font-family: Verdana">
-  <header>
+<body>
+  <div class=" p-5 bg-primary text-white">
     <h1>IES RAMON LLULL</h1>
-    <h2 style="text-align: center;">PRIMER PIS</h2>
-  </header>
+    <h2>PRIMERA PLANTA</h2>
+  </div>
 
   <div style="overflow: auto">
     <div class="menu">
@@ -90,14 +44,14 @@
         <a href="#Departament de matematiques">Departament de matematiques</a>
       </div>
       <div class="menuitem">
-        <a href="#Departament de flosofia">Departament de flosofia</a>
+        <a href="#Departament de flosofia">Departament de filosofia</a>
       </div>
       <div class="menuitem">
         <a href="#Departament de llatin i grec">Departament de llatin i grec</a>
       </div>
     </div>
 
-    <div class="right">
+    <div class="container mt-4">
       <h2>Ramon llull</h2>
       <p>
         Aquest institut porta impartint classes des de ja fa 100 anys, sent
@@ -119,35 +73,35 @@
           Pàgina oficial del centre
         </a>
       </p>
-    </div>
 
-    <div class="main">
+
+
       <h2 id="Banys">Banys</h2>
       <p>Aquests són els banys que hi ha la mà esquerra, són banys mixtos.</p>
-      <img src="img/IMG_20211026_123957_764.jpg" style="width: 100%" />
-    </div>
+      <img src="img/IMG_20211026_123957_764.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
 
-    <div class="main">
+
+
       <h2 id="Sortida d'emergència">Sortida d'emergència</h2>
       <p>
         La sortida d'emergència d'aquesta planta es troba la mà esquerra fins
         el tauler d'anuncis després a la dreta i pel passadís de ziquerda fins
         al fons, a prop del departament de filosofia.
       </p>
-      <img src="img/IMG_20211026_124520_642.jpg" style="width: 100%" />
-    </div>
+      <img src="img/IMG_20211026_124520_642.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
 
-    <div class="main">
+
+
       <h2 id="Ascensor">Ascensor</h2>
       <p>
         L'ascensor per accedir a la 2a planta i la planta baixa aquesta a
         l'esquerra, passant el departament de matemàtiques a la cantonada del
         passadís.
       </p>
-      <img src="img/IMG_20211026_124322_474.jpg" style="width: 100%" />
-    </div>
+      <img src="img/IMG_20211026_124322_474.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
 
-    <div class="main">
+
+
       <h2 id="Biblioteca">Biblioteca</h2>
       <p>
         La biblioteca es troba la mà esquerra a final de passadís, allà es
@@ -156,10 +110,16 @@
         usant el teu usuari de l'institut, on tindràs la teva carpeta i un
         escriptori personal.
       </p>
-      <img src="img/IMG_20211026_124809_348.jpg" style="width: 100%" />
-    </div>
+      <p>
+        Per a més informació, pots visitar la
+        <a href="http://biblioteca.iesramonllull.net/">
+          web de la biblioteca.
+        </a>
+      </p>
+      <img src="img/IMG_20211026_124809_348.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
 
-    <div class="main">
+
+
       <h2 id="Tauler d'anuncis">Tauler d'anuncis</h2>
       <p>
         Aquí es penjaran anuncis, activitats i xerrades que es realitzen
@@ -167,42 +127,23 @@
         llibres de segona mà per als alumnes, a més també hi ha més taulers a
         la palnata baixa de l'institut.
       </p>
-      <img src="img/IMG_20211026_124345_896.jpg" style="width: 100%" />
-    </div>
+      <img src="img/IMG_20211026_124345_896.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
 
-    <div class="main">
-      <h1 style="color: rgba(126, 126, 212, 0.863)"><u>Departaments</u></h1>
+
+      <h2>Departaments</h2>
       <p>
-        Aula on es reuneixen els mestres de certa assignatura, per a una junta
+        Es tracta de aules on es reuneixen els mestres de certes assignatures, per a una junta
         d'aquesta matèria, a més serveix com a aula normal per dictar classes,
         també per guardar material d'aquesta matèria.
       </p>
-    </div>
 
-    <div class="main">
-      <h2 id="Departament de GEO i història">
-        Departament de GEO i història
-      </h2>
-      <p></p>
-      <img src="img/IMG_20211026_124134_517.jpg" style="width: 100%" />
-    </div>
+      <ul>
 
-    <div class="main">
-      <h2 id="Departament de matematiques">Departament de matematiques</h2>
-      <p></p>
-      <img src="img/IMG_20211026_124705_715.jpg" style="width: 100%" />
-    </div>
+        <li>Departament de GEO i història</li>
+        <li>Departament de matematiques</li>
+        <li>Departament de flosofia</li>
+        <li>Departament de llatin i grec</li>
 
-    <div class="main">
-      <h2 id="Departament de flosofia">Departament de flosofia</h2>
-      <p></p>
-      <img src="img/IMG_20211026_124535_633.jpg" style="width: 100%" />
-    </div>
-
-    <div class="main">
-      <h2 id="Departament de llatin i grec">Departament de llatin i grec</h2>
-      <p></p>
-      <img src="img/IMG_20211026_124538_935.jpg" style="width: 100%" />
     </div>
   </div>
 
