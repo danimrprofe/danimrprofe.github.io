@@ -1,54 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color:#FFD640;padding:15px;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
+<html lang="ca">
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+</html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="personalitzacio.css">
+
 </head>
-<body style="font-family:Verdana;">
+
+
+<body>
 
     <nav id="navegacio" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -97,45 +66,50 @@
       </div>
     </div>
   </nav>
-
-<div style="background-color:#FFD640;padding:15px;">
-  <h1>Institut Ramon Llull</h1>
-
-  <h3><u><b>Cafeteria</b></u></h3>
-</div>
-
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem"></div>
-    <a href="#cafe">Cafeteria</a>
-   </div>
-
-<div class="main">
-    <h2 id="#cafe">Cafeteria</h2>
-    <p>Aquesta és la cafeteria de l'Institut de Ramon Llull, es espaiosa i compta amb una sala de professors.</p>
-    <img src="img/cafe.jpg" style="width:100%">
-    <img src="img/comedor.jpg" style="width:100%">
-    
-   
-</div>
-
-<div class="right">
-    <h2>¿Que puc menjar?</h2>
-    <p>Pots comprar tota mena de menjar, n'hi ha de tot.</p>
-    <p>Hi ha pizza, entrepans, pastes, gofres, llaminadures i altres coses més.
-Tot val al voltant de 2 euros com a màxim, aquesta força bo i adquisible</p>
-    <h2>Horaris</h2>
-    <p>La cafeteria obre a les vuit del matí i està oberta fins que acaben les classes, a les dues del migdia.</p>
-    <h2>La sala de professors</h2>
-    <p>Esta adevora de la cafeteria.</p>
-    <img src="img/sala profee.jpg" style="width:100%;">
-
-</div>
-
-</div>
+  <div id="capsalera" class=" p-5 bg-primary text-white">
+    <h1 class="fw-bolder"><a class="text-reset text-decoration-none" href="index.html"> IES RAMON LLULL</a></h1>
+    <h2>Benvingut!</h2>
+  </div>
 
 
- <div style="background: color#FFC900;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+    <div class="container mt-4">
+      <h2>Ramon llull</h2>
+      <p>
+        Aquest institut porta impartint classes des de ja fa 100 anys, sent
+        aquest l'institut més antic de mallorca i amb més prestigi
+      </p>
+      <div class="menuitem">
+        <iframe width="190px" src="https://www.youtube.com/embed/XVBSX37NjE4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <h2>Departaments</h2>
+      <p>
+        Es tracta de aules on es reuneixen els mestres de certes assignatures, per a una junta
+        d'aquesta matèria, a més serveix com a aula normal per dictar classes,
+        també per guardar material d'aquesta matèria.
+      </p>
 
+      <ul>
+
+        <li>Departament de GEO i història</li>
+        <li>Departament de matematiques</li>
+        <li>Departament de flosofia</li>
+        <li>Departament de llatin i grec</li>
+
+    </div>
+  </div>
+
+  <div style="
+        background-color: #b1d1e9;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+        font-size: 12px;
+      ">
+    <a href="http://www.iesramonllull.net/"> Pàgina oficial del centre </a>
+  </div>
 </body>
+
 </html>
