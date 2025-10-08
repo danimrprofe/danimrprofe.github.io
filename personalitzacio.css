@@ -5,3 +5,18 @@
 #navegacio {
     background-image: linear-gradient(310deg, #141727, #3a416f);
 }
+  /* Per dispositius amb pantalles petites (mòbils) */
+  @media (max-width: 767px) {
+    #capsalera {
+      padding-top: 2rem; /* Reduir el padding superior */
+      padding-bottom: 1rem; /* Reduir el padding inferior */
+    }
+    
+    #capsalera h1 {
+      font-size: 1.5rem; /* Reduir la mida del text de l'encapçalament */
+    }
+    
+    #capsalera h2 {
+      font-size: 1rem; /* Reduir la mida del text de l'altre encapçalament */
+    }
+  }
