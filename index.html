@@ -1,105 +1,157 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inici - IES Ramon Llull</title>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="personalitzacio.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="personalitzacio.css" />
+  </head>
 
-</head>
+  <body style="font-family: Verdana">
+    <!-- Navbar inclòs amb fetch -->
+    <div id="navbar"></div>
 
-<body>
+    <!-- Contingut principal -->
+    <div class="container mb-5">
+      <!-- Secció principal: text + imatges -->
+      <div class="row g-4 align-items-center">
+        <!-- Text sobre l'institut -->
+        <div class="col-md-6">
+          <h2>Sobre l'institut</h2>
+          <p>
+            L'<strong>Institut de Ramon Llull</strong> està situat a Palma de
+            Mallorca, prop del <strong>centre històric</strong>. És un centre
+            amb una llarga <strong>trajectòria educativa</strong>, fundat a
+            principis del segle XX. Al llarg dels anys ha anat creixent i
+            adaptant-se a les necessitats dels alumnes.
+          </p>
 
-  <div id="capsalera" class=" p-5 bg-primary text-white">
-    <h1 class="fw-bolder"><a class="text-reset text-decoration-none" href="index.html"> IES RAMON LLULL</a></h1>
-    <h2>Benvingut!</h2>
-  </div>
+          <p>
+            L'<strong>edifici principal</strong> combina l'arquitectura
+            tradicional amb espais moderns i ben equipats, incloent
+            <strong>laboratoris</strong>, <strong>aules d'informàtica</strong> i
+            sales polivalents. També compta amb un pati ampli i zones verdes per
+            a activitats recreatives.
+          </p>
+        </div>
 
-  <nav id="navegacio" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Menú</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="plantabaixa.html">Planta baixa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cafeteria.html">Cafeteria</a>
-          </li>
-                              <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="departaments.html">Departaments</a>
-          </li>
-                    <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="biblioteca.html">Biblioteca</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="gimnas.html">Gimnàs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="laboratoris.html">Laboratoris</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="museu.html">Museu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="pati.html">Pati</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="tecno.html">Departament de tecnologia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="primeraplanta.html">Primera planta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="segonpis.html">Segona planta</a>
-          </li>
+        <!-- Imatges -->
+        <div class="col-md-6 text-center">
+          <img
+            src="img/entrada.jpg"
+            class="img-fluid rounded shadow mb-3"
+            alt="Entrada de l'IES Ramon Llull"
+          />
+          <img
+            src="img/pati.jpg"
+            class="img-fluid rounded shadow"
+            alt="Pati de l'IES Ramon Llull"
+          />
+        </div>
+      </div>
 
-        </ul>
+      <!-- Ensenyaments i Història a sota -->
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h2>🎓 Ensenyaments</h2>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">
+              📘 <strong>Educació Secundària Obligatòria (ESO)</strong
+              ><br />Formació acadèmica general per a adolescents.
+            </li>
+            <li class="list-group-item">
+              📗 <strong>Batxillerat</strong><br />Formació especialitzada abans
+              de la universitat amb diverses modalitats.
+            </li>
+            <li class="list-group-item">
+              💻 <strong>Cicles Formatius de Grau Superior</strong
+              ><br />Animació Sociocultural i Integració Social.
+            </li>
+            <li class="list-group-item">
+              🖥️ <strong>Formació Professional Bàsica</strong><br />Informàtica
+              d'Oficina.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h3>🏛️ Història i tradició</h3>
+          <p>
+            L'institut porta el nom del famós filòsof i matemàtic Ramon Llull i
+            sempre ha destacat per la seva aposta pedagògica en ciències i
+            tecnologia. Al llarg dels anys, els seus alumnes han participat en
+            projectes científics, culturals i esportius de reconeixement local i
+            internacional.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards resum -->
+      <div class="row mt-5 g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">📍 Ubicació</h5>
+              <p class="card-text">
+                Situat a Palma, a prop del centre històric i ben comunicat amb
+                transport públic.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">🏫 Instal·lacions</h5>
+              <p class="card-text">
+                Aules modernes, laboratoris, aula magna, biblioteca, pati gran i
+                zones verdes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">🎨 Activitats</h5>
+              <p class="card-text">
+                Projectes educatius, concursos, esports, arts i activitats
+                culturals per a tots els cursos.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <div class="row  p-5">
+    <!-- Footer -->
+    <footer class="bg-light py-3 text-center">
+      WEB OFICIAL DE L'IES RAMON LLULL
+    </footer>
 
-    <div class="col-md ">
+    <!-- Scripts Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-      <p class="p-3 rounded bg-primary text-white">Coneix el nostre institut. Aquest lloc web ha estat creat pels
-        alumnes
-        de TIC de 2n de batxillerat del curs 2021-2022.</p>
-
-      <p>Navega per les diferents plantes per a conèixer tots els seus espais</p>
-
-      <h2>Parts</h2>
-      <p>L'edifici, a més de l'institut pròpiament dit, conté:</p>
-      <ul>
-        <li>una escola de disseny gràfic</li>
-        <li>Un edifici propietat de la Universitat de les Illes Balears (UIB), que rep el nom a d'edifici de sa Riera
-        </li>
-      </ul>
-
-      <h2>Ensenyaments</h2>
-      <p>
-        Actualment a l'IES Ramon Llull, s'imparteixen:
-      </p>
-      <ul>
-        <li>Estudis d'Educació Secundària Obligatòria (ESO)</li>
-        <li>Estudis de batxillerat</li>
-        <li>Dos Cicles Formatius de Grau Superior (Animació Sociocultural i Integració Social)</li>
-        <li>Formació Professional Bàsica (Títol Professional Bàsic en Informàtica d'Oficina)</li>
-      </ul>
-    </div>
-    <div class="col-md">
-      <img alt="ies ramon llull palma" src="img/entrada.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
-    </div>
-  </div>
-</body>
-
+    <!-- Fetch Navbar -->
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar").innerHTML = html;
+        })
+        .catch((err) => console.error("Error al carregar el navbar:", err));
+    </script>
+  </body>
 </html>

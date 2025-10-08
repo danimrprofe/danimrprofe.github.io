@@ -1,80 +1,34 @@
 <!DOCTYPE html>
-<html lang="ca">
-
-</html>
+<html lang="ca"></html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="personalitzacio.css" />
+  </head>
 
-  <link rel="stylesheet" href="personalitzacio.css">
+  <body>
+    <div id="navbar"></div>
 
-</head>
-
-
-<body>
-  <nav id="navegacio" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Menú</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="plantabaixa.html">Planta baixa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cafeteria.html">Cafeteria</a>
-          </li>
-                              <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="departaments.html">Departaments</a>
-          </li>
-                    <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="biblioteca.html">Biblioteca</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="gimnas.html">Gimnàs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="laboratoris.html">Laboratoris</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="museu.html">Museu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="pati.html">Pati</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="tecno.html">Departament de tecnologia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="primeraplanta.html">Primera planta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="segonpis.html">Segona planta</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
- 
     <div class="container mt-4">
-       <h2 id="Biblioteca">Biblioteca</h2>
+      <h2 id="Biblioteca">Biblioteca</h2>
       <p>
-        La biblioteca es troba la mà esquerra a final de passadís, allà es
-        troba una col·lecció de llibres variats des de literatura fins a
-        llibres més acadèmics, a més trobaràs ordinadors per a l'ús públic,
-        usant el teu usuari de l'institut, on tindràs la teva carpeta i un
-        escriptori personal.
+        La biblioteca es troba la mà esquerra a final de passadís, allà es troba
+        una col·lecció de llibres variats des de literatura fins a llibres més
+        acadèmics, a més trobaràs ordinadors per a l'ús públic, usant el teu
+        usuari de l'institut, on tindràs la teva carpeta i un escriptori
+        personal.
       </p>
       <p>
         Per a més informació, pots visitar la
@@ -82,10 +36,19 @@
           web de la biblioteca.
         </a>
       </p>
-      <img src="img/IMG_20211026_124809_348.jpg" class="my-3 rounded img-fluid mx-auto d-block" alt="">
-
-
-  </div>
-</body>
-
+      <img
+        src="img/IMG_20211026_124809_348.jpg"
+        class="my-3 rounded img-fluid mx-auto d-block"
+        alt=""
+      />
+    </div>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar").innerHTML = html;
+        })
+        .catch((err) => console.error("Error al carregar el navbar:", err));
+    </script>
+  </body>
 </html>

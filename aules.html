@@ -1,115 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departament de Tecnologia - IES Ramon Llull</title>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="personalitzacio.css" />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <body>
+    <!-- Navbar inclòs amb fetch -->
+    <div id="navbar"></div>
 
-</head>
+    <!-- Contingut principal -->
+    <div class="container mt-4">
+      <h1 class="mb-4">Departament de Tecnologia</h1>
+      <h2 class="mb-3">Espais</h2>
+      <div class="row g-4">
+        <!-- Aula d'informàtica -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="img/tic.jpg"
+              class="card-img-top img-fluid"
+              alt="Aula d'informàtica"
+            />
+            <h5 class="card-header bg-primary text-white">
+              Aula d'informàtica
+            </h5>
+            <div class="card-body bg-light">
+              <h5 class="card-title">Planta baixa</h5>
+            </div>
+          </div>
+        </div>
 
-<body style="font-family:Verdana;">
+        <!-- Aula de tecnologia industrial -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="img/Tecno 1.jpg"
+              class="card-img-top img-fluid"
+              alt="Aula de tecnologia industrial"
+            />
+            <h5 class="card-header bg-primary text-white">
+              Aula de tecnologia industrial
+            </h5>
+            <div class="card-body bg-light">
+              <h5 class="card-title">Planta baixa</h5>
+              <p class="card-text">
+                Aula especialitzada per planificar i dissenyar processos de
+                manufactura i equipament industrial. Disposa de 5 taules de
+                treball en grup.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  <div class="container-fluid ovsssserflow-hidden">
-    <div class="row vh-100 overflow-auto">
-      <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
-        <div
-          class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
-          <a href="/" class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-5">B<span class="d-none d-sm-inline">rand</span></span>
-          </a>
-          <ul
-            class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start"
-            id="menu">
-            <li class="nav-item">
-              <a href="../tecno.html" class="nav-link px-sm-0 px-2">
-                <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Departament</span>
-              </a>
-            </li>
-            <li>
-              <a href="../aules.html" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
-                <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Aules</span>
-              </a>
-            </li>
-            <li>
-              <a href="../materies/" class="nav-link px-sm-0 px-2">
-                <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Matèries</span></a>
-            </li>
-
-            <li>
-              <a href="../continguts/" class="nav-link px-sm-0 px-2">
-                <i class="fs-5 bi-people"></i><span class="ms-1 d-none d-sm-inline">Continguts</span>
-              </a>
-            </li>
-          </ul>
-
+        <!-- Aula de fusta -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img
+              src="img/fusta.jpg"
+              class="card-img-top img-fluid"
+              alt="Aula de fusta"
+            />
+            <h5 class="card-header bg-primary text-white">Aula de fusta</h5>
+            <div class="card-body bg-light">
+              <h5 class="card-title">Planta baixa</h5>
+              <p class="card-text">
+                Aula especialitzada per al treball amb fusta i el seu estudi en
+                tecnologia.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col d-flex flex-column h-sm-100">
-        <main class="row overflow-auto">
-          <div class="col pt-4">
-
-            <div class="container">
-              <h1>Departament de tecnologia</h1>
-              <h2>Espais</h2>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="card ">
-                    <img src="img/tic.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-header bg-primary text-white">Aula d'informàtica</h5>
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">a la planta baixa</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    <img src="img/Tecno 1.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-header bg-primary text-white">Aula de tecnologia industrial</h5>
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">Planta baixa</h5>
-                      <p class="card-text">Aula especialitzada per planificar i dissenyar processos de manufactura i
-                        equip que és un aspecte principal
-                        de la tecnologia industrial.</p>
-                      <p>Disposa de 5 taules de treball en grup.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                  <div class="card ">
-                    <img src="img/fusta.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-header bg-primary text-white">Aula de fusta</h5>
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">Planta baixa</h5>
-                      <p class="card-text">Aula especialitzada per el treball amb fusta i el seu estudi en la
-                        tecnologia.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-      </div>
-      </main>
-      <footer class="row bg-light py-4 mt-auto">
-        <div class="col"> Footer content here... </div>
-      </footer>
     </div>
-  </div>
-  </div>
 
-</body>
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-4 text-center">
+      WEB OFICIAL DE L'IES RAMON LLULL
+    </footer>
 
-</html>
+    <!-- Scripts Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
-
+    <!-- Fetch Navbar -->
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar").innerHTML = html;
+        })
+        .catch((err) => console.error("Error al carregar el navbar:", err));
+    </script>
+  </body>
 </html>

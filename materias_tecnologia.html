@@ -1,123 +1,230 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departament de Tecnologia - IES Ramon Llull</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-<body style="font-family:Verdana;">
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+      }
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="continguts.html">Continguts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="materias_tecnologia.html">Matèries</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aules.html">Espais</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      /* Colors per nivells */
+      .card-eso {
+        border-top: 4px solid #0d6efd;
+      }
 
-    <div id="intro" class="bg-image shadow-2-strong ">
-        <div class="mask p-5 blue-gradient" style="background-color: rgba(0, 0, 0, 0.8);">
-            <div class="container d-flex align-items-center justify-content-center text-center h-100">
-                <div class="text-white">
-                    <figure class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-android" viewBox="0 0 16 16">
-                            <path
-                                d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.0352A8.94 8.94 0 0 1 8 5a8.94 8.94 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
-                        </svg>
-                        <h1 class="display-5 fw-bold">Departament de tecnologia</h1>
-                        <p class="col-md-8 fs-4">IES RAMON LLULL</p>
-                        <figcaption class="blockquote-footer">
-                            On es formen els millors <cite title="Source Title">informàtics i enginyers!</cite>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
+      .card-batx {
+        border-top: 4px solid #198754;
+      }
 
-    <div class="container py-2">
-        <div class="alert alert-success" role="alert">
-            <h3 class="alert-heading"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
-                </svg></h3>
-            <p>Benvingut al web del departament de tecnologia de l'IES Ramon Llull. Aquí trobaràs
-                tota la informació del nostre departament. També podràs saber en quins projectes estam
-                treballant.</p>
+      .intro-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("img/tecnologia-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
 
-        </div>
-    </div>
+      .intro-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
 
-    <div class="row p-2">
+      .intro-section p {
+        font-size: 1.5rem;
+      }
 
-        <div class="col-md">
-            <h1 class="mt-3">Tecnologia i enginyeria</h1>
-            <h3>1r de batxillerat</h3>
-            <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
-                tant a primer com a segon de batxillerat. Es tracta d'una matèria nova inclosa a la LOMLOE.</p>
-            <img src="img/tie.jpeg" class="rounded img-fluid mx-auto d-block">
-        </div>
-        <div class="col-md">
-            <h1 class="mt-3">Recursos digitals</h1>
-            <h3>1r d'ESO</h3>
-            <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
-                tant a primer com a segon de d'ESO.</p>
-            <img src="img/tic.jpg" class="rounded img-fluid mx-auto d-block">
-        </div>
-        <div class="col-md">
-            <h1 class="mt-3">Programació i tractament de dades</h1>
-            <h3>1r de batxillerat</h3>
-            <p>Es tracta d'una matèria <strong>optativa</strong> que es pot cursar
-                tant a primer com a segon de batxillerat.</p>
-            <img src="img/pdc.jpeg" class="rounded img-fluid mx-auto d-block">
-        </div>
-    </div>
-    <div class="row p-2">
-        <div class="col-md">
-            <h1 class="mt-3">Tecnologia i digitalització</h1>
-            <h3>2n i 3r d'ESO</h3>
-            <p>Es tracta d'una matèria <strong>troncal</strong> que es cursa
-                tant a segon com a tercer de d'ESO.</p>
-            <img src="img/tic.jpg" class="rounded img-fluid mx-auto d-block"">
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar carregat amb fetch -->
+    <div id="navbar"></div>
+
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar").innerHTML = html;
+        })
+        .catch((err) => console.error("Error al carregar el navbar:", err));
+    </script>
+
+    <!-- Secció introductòria -->
+    <section class="intro-section">
+      <div class="container">
+        <h1>Departament de Tecnologia</h1>
+        <p>
+          IES Ramon Llull - On es formen els millors informàtics i enginyers!
+        </p>
       </div>
-            <div class=" col-md">
-            <h1 class=" mt-3">Digitalització</h1>
-            <h3>4t d'ESO</h3>
-            <img src="img/tic.jpg" class="rounded img-fluid mx-auto d-block"">
-      </div>
-    </div>
-    </div>
-  </div>
+    </section>
 
-  <div style=" background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> <a
-                href="http://www.iesramonllull.net/">
-                WEB OFICIAL DE L'IES RAMON LLULL</a>
+    <!-- Secció matèries -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Tecnologia i Enginyeria -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-batx h-100 shadow-sm">
+            <img
+              src="img/tie.jpeg"
+              class="card-img-top rounded-top"
+              alt="Tecnologia i enginyeria"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tecnologia i Enginyeria</h5>
+              <h6>1r i 2n de Batxillerat</h6>
+              <p class="card-text">
+                Matèria <strong>optativa</strong> que es pot cursar tant a 1r
+                com a 2n de batxillerat. Inclosa a la LOMLOE.
+              </p>
+            </div>
+          </div>
         </div>
 
-</body>
+        <!-- Programació i Tractament de Dades -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-batx h-100 shadow-sm">
+            <img
+              src="img/pdc.jpeg"
+              class="card-img-top rounded-top"
+              alt="Programació i tractament de dades"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Programació i Tractament de Dades</h5>
+              <h6>1r i 2n de Batxillerat</h6>
+              <p class="card-text">
+                Matèria <strong>optativa</strong> per aprendre programació i
+                gestió de dades, cursable a 1r i 2n de batxillerat.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Entorns Digitals i Multimedia -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-eso h-100 shadow-sm">
+            <img
+              src="img/entorns.jpg"
+              class="card-img-top rounded-top"
+              alt="Entorns Digitals i Multimedia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Entorns Digitals i Multimedia</h5>
+              <h6>1r d'ESO</h6>
+              <p class="card-text">
+                Matèria <strong>optativa</strong> per introduir alumnes a eines
+                multimèdia i entorns digitals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recursos Digitals I -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-eso h-100 shadow-sm">
+            <img
+              src="img/tic.jpg"
+              class="card-img-top rounded-top"
+              alt="Recursos digitals I"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Recursos Digitals I</h5>
+              <h6>2n d'ESO</h6>
+              <p class="card-text">
+                Matèria <strong>optativa</strong> per aprendre eines digitals
+                bàsiques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recursos Digitals II -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-eso h-100 shadow-sm">
+            <img
+              src="img/tic.jpg"
+              class="card-img-top rounded-top"
+              alt="Recursos digitals II"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Recursos Digitals II</h5>
+              <h6>3r d'ESO</h6>
+              <p class="card-text">
+                Matèria per aprofundir en eines multimèdia i projectes digitals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tecnologia i Digitalització -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-eso h-100 shadow-sm">
+            <img
+              src="img/tic.jpg"
+              class="card-img-top rounded-top"
+              alt="Tecnologia i digitalització"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tecnologia i Digitalització</h5>
+              <h6>2n i 3r d'ESO</h6>
+              <p class="card-text">
+                Matèria <strong>troncal</strong> que es cursa tant a 2n com a 3r
+                d'ESO.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digitalització -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-eso h-100 shadow-sm">
+            <img
+              src="img/tic.jpg"
+              class="card-img-top rounded-top"
+              alt="Digitalització"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Digitalització</h5>
+              <h6>4t d'ESO</h6>
+              <p class="card-text">
+                Matèria dedicada a desenvolupar habilitats digitals avançades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-5">
+      <p class="mb-0">
+        <a href="http://www.iesramonllull.net/" class="text-decoration-none"
+          >WEB OFICIAL DE L'IES RAMON LLULL</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
